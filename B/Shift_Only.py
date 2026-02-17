@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 N = int(input())
 ary = list(map(int, input().split()))

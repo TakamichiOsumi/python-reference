@@ -1,5 +1,4 @@
-#!/bin/python
-
+#!/usr/bin/env python3
 
 H, A = map(int, input().split())
 
