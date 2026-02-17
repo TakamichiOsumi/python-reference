@@ -9,6 +9,8 @@ def anagram_compare(si_exists, sj_exists):
             return False
     return True
 
+anagram_count = 0
+
 for i in range(0, N):
     chars = list(input())
     exists = [0] * 26
@@ -17,12 +19,9 @@ for i in range(0, N):
         exists[idx] = exists[idx] + 1
     S.append(exists)
 
-anagram_count = 0
-for i in range(0, N):
-    for j in range(i + 1, N):
-        if i == j:
-            continue
-        if anagram_compare(S[i], S[j]):
+    # Trigger the anagram search from the end index.
+    for j in range(i - 1, -1, -1):
+        if anagram_compare(S[j], exists):
             anagram_count = anagram_count + 1
 
 print(anagram_count)
