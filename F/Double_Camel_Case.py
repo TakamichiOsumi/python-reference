@@ -12,10 +12,11 @@ while True:
     while N[right].islower():
         right = right + 1
     
-    # Found a word made more than 3 chars.
     words.append(N[left:right + 1])
     idx = right + 1
     if idx >= len(N):
         break
 
+# The str.lower key is required. Without the key,
+# the sort results are affected by lower and upper letters.
 print("".join(sorted(words, key = str.lower)))
