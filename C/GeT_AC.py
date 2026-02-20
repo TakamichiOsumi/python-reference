@@ -13,7 +13,7 @@ prefix_sum = [0] * N
 accumulated_value = 0
 for i in range(N):
 
-    # Make sure the pointer to the indxes never exceed the len(found_indexes) - 1,
+    # Make sure the pointer to the indexes never exceed the len(found_indexes) - 1,
     # the total number of the finditer() matches.
     #
     # Also, search for the last index of 'AC' to increment accumulated_value.
