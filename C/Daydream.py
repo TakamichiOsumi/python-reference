@@ -6,7 +6,7 @@ S = input()
 # Both 'd' or 'e' can follow all of below cases.
 # 01234   567890 (index of 'S' for reference)
 # -----------------------------------------------
-# dream   eraser
+# dream + eraser
 # dream + erase
 # dream   er
 # dream
@@ -65,8 +65,13 @@ while len(S) > p:
             conclusion = False
             break
 
+        # This is the second additional check.
+        #
+        # Since S can end here or just have 'er'
+        # at the end, it's necessary to refer to
+        # the left length of S, like the top
+        # while loop condition.
         if len(S) - p > 0 and S[p] == 'e':
-
             if eraser(S, p):
                 p += len("eraser")
                 continue
@@ -83,6 +88,7 @@ while len(S) > p:
             break
 
         # Just found "dream". Next can be another dream or dreamer.
+        # Go back to the start.
         continue
 
     elif c == 'e':
