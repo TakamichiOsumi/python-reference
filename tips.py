@@ -28,3 +28,11 @@ def convert_dec_to_n_adic(decimal, n):
         s = str(decimal % n) + s
         decimal = decimal // n
     return s
+
+# ------------------------------------
+# Remove one leftmost char (or sub string)
+# in a string.
+# ------------------------------------
+S = "abcdefghiabc"
+S = S.replace('a', '', count = 1)
+# print(S) => bcdefghiabc
