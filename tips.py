@@ -36,3 +36,13 @@ def convert_dec_to_n_adic(decimal, n):
 S = "abcdefghiabc"
 S = S.replace('a', '', count = 1)
 # print(S) => bcdefghiabc
+
+
+# ------------------------------------
+# SortedList
+# ------------------------------------
+from sortedcontainers import SortedList
+sorted_list = SortedList([1, 2, 3, 4, 5])
+sorted_list.add(6)
+sorted_list.add(7)
+print(sorted_list) # => [1, 2, 3, 4, 5, 6, 7]
