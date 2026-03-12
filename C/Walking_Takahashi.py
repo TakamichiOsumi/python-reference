@@ -24,7 +24,7 @@ elif X < 0:
         else:
             print(abs(X + (used * D) - D))
     else:
-        # X - (K * D) == 0:
+        # X + (K * D) == 0:
         print(0)
 else:
     # X == 0
