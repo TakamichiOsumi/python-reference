@@ -1,5 +1,9 @@
 # python-reference
 
+My personal notes of algorithms.
+
+## Notes
+
 Newly added scripts are stored as executable files,
 to make it run comfortably on the local testing environment.
 
