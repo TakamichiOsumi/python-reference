@@ -7,7 +7,7 @@ for i in range(Q):
     if query[0] == 1:
         R = query[1]
         print(R * W)
-        H = H - R        
+        H = H - R
     elif query[0] == 2:
         C = query[1]
         print(C * H)
