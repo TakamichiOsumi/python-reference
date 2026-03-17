@@ -1,6 +1,6 @@
 # python-reference
 
-My personal notes of algorithms.
+My personal notes about algorithms.
 
 ## Notes
 
