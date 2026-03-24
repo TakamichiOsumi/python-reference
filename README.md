@@ -2,11 +2,6 @@
 
 My personal notes about algorithms.
 
-## Notes
-
-Newly added scripts are stored as executable files,
-to make it run comfortably on the local testing environment.
-
 ## Set up the environment
 
 ```
@@ -15,3 +10,10 @@ $ cd python-reference
 $ python3 -m venv venv
 $ source venv/bin/activate
 (venv) $ pip install -r requirements.txt
+
+## Notes
+
+Tested on only mac os x.
+
+Newly added scripts are stored as executable files,
+to make it run comfortably on the local testing environment.
