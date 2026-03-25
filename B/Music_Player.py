@@ -18,9 +18,6 @@ for i in range(Q):
         if sound >= 1:
             sound -= 1
     elif A == 3:
-        if playing == True:
-            playing = False
-        else:
-            playing = True
-
+        playing = False if playing else True
+    # Check the current status
     check(playing, sound)
