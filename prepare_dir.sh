@@ -4,6 +4,10 @@ if [ X${1} = "X" ]; then
     echo "Input the name of directory"
     exit 1
 else
+    if [ -d ${1} ]; then
+	echo "The directory already exists"
+	exit 1
+    fi
     mkdir $1
     cd $1
     cp ../template.py A.py
@@ -16,4 +20,5 @@ else
     touch D_{1..3}.txt
     cp ../template.py E.py
     touch E_{1..3}.txt
+    echo "Created a new directory"
 fi
