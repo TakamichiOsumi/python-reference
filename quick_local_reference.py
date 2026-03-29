@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+import code
+
 # ------------------------------------
 # template
 # ------------------------------------
@@ -9,7 +13,7 @@
 ary = [1, 2, 3, -1, -2]
 new_ary = list(filter(lambda a:a < 0, ary))
 print(new_ary)
-# => [-1, -2]
+# [-1, -2]
 
 # ------------------------------------
 # Integer Division (//)
@@ -35,8 +39,8 @@ def convert_dec_to_n_adic(decimal, n):
 # ------------------------------------
 S = "abcdefghiabc"
 S = S.replace('a', '', count = 1)
-# print(S) => bcdefghiabc
-
+# print(S)
+# "bcdefghiabc"
 
 # ------------------------------------
 # SortedList
@@ -45,7 +49,8 @@ from sortedcontainers import SortedList
 sorted_list = SortedList([1, 2, 3, 4, 5])
 sorted_list.add(6)
 sorted_list.add(7)
-print(sorted_list) # => [1, 2, 3, 4, 5, 6, 7]
+print(sorted_list)
+# [1, 2, 3, 4, 5, 6, 7]
 
 # ------------------------------------
 # itertools
@@ -53,11 +58,14 @@ print(sorted_list) # => [1, 2, 3, 4, 5, 6, 7]
 import itertools
 print("permutations=", list(itertools.permutations(range(1, 4))))
 print("combinations=", list(itertools.combinations(range(1, 5), 3)))
-print("combinations_with_replacement=", list(itertools.combinations_with_replacement(range(1, 4), 3)))
+print("combinations_with_replacement=",
+      list(itertools.combinations_with_replacement(range(1, 4), 3)))
 print("product=", list(itertools.product(range(1, 4), range(1, 4))))
 # permutations= [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
 # combinations= [(1, 2, 3), (1, 2, 4), (1, 3, 4), (2, 3, 4)]
-# combinations_with_replacement= [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2), (1, 2, 3), (1, 3, 3), (2, 2, 2), (2, 2, 3), (2, 3, 3), (3, 3, 3)]
+# combinations_with_replacement=
+# [(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 2),
+#  (1, 2, 3), (1, 3, 3), (2, 2, 2), (2, 2, 3), (2, 3, 3), (3, 3, 3)]
 # product= [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
 
 # ------------------------------------
@@ -74,6 +82,7 @@ def bit_brute_force(N, data):
     return comb
 
 data = [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4], [5, 5, 5]]
+
 print(bit_brute_force(1, data))
 # [[], [[1, 1, 1]]]
 print(bit_brute_force(2, data))
@@ -90,7 +99,7 @@ print(bit_brute_force(3, data))
 # [[1, 1, 1], [3, 3, 3]],
 # [[2, 2, 2], [3, 3, 3]],
 # [[1, 1, 1], [2, 2, 2], [3, 3, 3]]]
-print(bit_brute_force(4, data))
+# print(bit_brute_force(4, data))
 # [[],
 # [[1, 1, 1]],
 # [[2, 2, 2]],
@@ -108,23 +117,42 @@ print(bit_brute_force(4, data))
 # [[2, 2, 2], [3, 3, 3], [4, 4, 4]],
 # [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]]
 
-
 # ------------------------------------
 # Characters
 # ------------------------------------
 import string
 # help(string)
 # ...
-# DATA
-#     __all__ = ['ascii_letters', 'ascii_lowercase', 'ascii_uppercase', 'cap...
 #     ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 #     ascii_lowercase = 'abcdefghijklmnopqrstuvwxyz'
 #     ascii_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 #     digits = '0123456789'
 #     hexdigits = '0123456789abcdefABCDEF'
 #     octdigits = '01234567'
-#     printable = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU...
 #     punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 #     whitespace = ' \t\n\r\x0b\x0c'
 print(string.ascii_letters)
 print(string.ascii_uppercase)
+
+# ------------------------------------
+# Dictionary
+# ------------------------------------
+dict = { "apple" : 1, "orange" : 2, "grape" : 3 , "lemon" : 4 }
+
+target = "apple"
+if target in dict.keys():
+    dict[target] += 100
+else:
+    dict[target] = 1
+print(dict)
+# {'apple': 101, 'orange': 2, 'grape': 3, 'lemon': 4}
+
+mat = data # See above.
+
+# ------------------------------------
+# Initialize and launch an interactive
+# shell with vars defined here.
+# ------------------------------------
+vars = globals().copy()
+shell = code.InteractiveConsole(vars)
+shell.interact(banner = "Interactive console started (type 'quit()' to exit) : ")
