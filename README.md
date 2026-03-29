@@ -1,6 +1,6 @@
 # python-reference
 
-My personal notes about algorithms.
+My personal notes about algorithms during self-study.
 
 ## Set up the environment
 
@@ -14,7 +14,8 @@ $ source venv/bin/activate
 
 ## Notes
 
-Tested on only mac os x.
+Tested on only Mac OS X.
 
 Newly added scripts are stored as executable files,
 to make it run comfortably on the local testing environment.
+This is to reduce typing commands, even one character.
