@@ -107,3 +107,24 @@ print(bit_brute_force(4, data))
 # [[1, 1, 1], [3, 3, 3], [4, 4, 4]],
 # [[2, 2, 2], [3, 3, 3], [4, 4, 4]],
 # [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]]
+
+
+# ------------------------------------
+# Characters
+# ------------------------------------
+import string
+# help(string)
+# ...
+# DATA
+#     __all__ = ['ascii_letters', 'ascii_lowercase', 'ascii_uppercase', 'cap...
+#     ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#     ascii_lowercase = 'abcdefghijklmnopqrstuvwxyz'
+#     ascii_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#     digits = '0123456789'
+#     hexdigits = '0123456789abcdefABCDEF'
+#     octdigits = '01234567'
+#     printable = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTU...
+#     punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+#     whitespace = ' \t\n\r\x0b\x0c'
+print(string.ascii_letters)
+print(string.ascii_uppercase)
