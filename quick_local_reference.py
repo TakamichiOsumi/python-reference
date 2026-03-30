@@ -71,26 +71,26 @@ print("product=", list(itertools.product(range(1, 4), range(1, 4))))
 # ------------------------------------
 # Bit Brute Force
 # ------------------------------------
-def bit_brute_force(N, data):
+def bit_brute_force(N, mat):
     comb = []
     for i in range(2 ** N):
         ary = []
         for j in range(N):
             if ((i >> j) & 1):
-                ary.append(data[j])
+                ary.append(mat[j])
         comb.append(ary)
     return comb
 
-data = [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4], [5, 5, 5]]
+mat = [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4], [5, 5, 5]]
 
-print(bit_brute_force(1, data))
+print(bit_brute_force(1, mat))
 # [[], [[1, 1, 1]]]
-print(bit_brute_force(2, data))
+print(bit_brute_force(2, mat))
 # [[],
 # [[1, 1, 1]],
 # [[2, 2, 2]],
 # [[1, 1, 1], [2, 2, 2]]]
-print(bit_brute_force(3, data))
+print(bit_brute_force(3, mat))
 # [[],
 # [[1, 1, 1]],
 # [[2, 2, 2]],
@@ -99,7 +99,7 @@ print(bit_brute_force(3, data))
 # [[1, 1, 1], [3, 3, 3]],
 # [[2, 2, 2], [3, 3, 3]],
 # [[1, 1, 1], [2, 2, 2], [3, 3, 3]]]
-# print(bit_brute_force(4, data))
+# print(bit_brute_force(4, mat))
 # [[],
 # [[1, 1, 1]],
 # [[2, 2, 2]],
@@ -146,8 +146,6 @@ else:
     dict[target] = 1
 print(dict)
 # {'apple': 101, 'orange': 2, 'grape': 3, 'lemon': 4}
-
-mat = data # See above.
 
 # ------------------------------------
 # Initialize and launch an interactive
