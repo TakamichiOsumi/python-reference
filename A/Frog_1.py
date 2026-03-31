@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# The key takeaway of this practice.
+#
+# 1. Calculate each minimum cost from the front index.
+# 2. Draw a table on a notebook to correctly select the right indexes
+#    for cost difference.
+
 N = int(input())
 cost_ary = list(map(int, input().split()))
 
