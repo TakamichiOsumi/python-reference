@@ -16,6 +16,12 @@ print(new_ary)
 # [-1, -2]
 
 # ------------------------------------
+# Add value to all elements in an array
+# ------------------------------------
+old = [1, 2, 3, 4, 5]
+new = [x + 10 for x in old]
+
+# ------------------------------------
 # Integer Division (//)
 # ------------------------------------
 # print(5 // 5)  => 1
@@ -90,7 +96,7 @@ print(bit_brute_force(2, mat))
 # [[1, 1, 1]],
 # [[2, 2, 2]],
 # [[1, 1, 1], [2, 2, 2]]]
-print(bit_brute_force(3, mat))
+# print(bit_brute_force(3, mat))
 # [[],
 # [[1, 1, 1]],
 # [[2, 2, 2]],
