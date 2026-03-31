@@ -137,8 +137,8 @@ import string
 #     octdigits = '01234567'
 #     punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 #     whitespace = ' \t\n\r\x0b\x0c'
-print(string.ascii_letters)
-print(string.ascii_uppercase)
+# print(string.ascii_letters)
+# print(string.ascii_uppercase)
 
 # ------------------------------------
 # Dictionary
@@ -157,6 +157,14 @@ print(dict)
 # Initialize and launch an interactive
 # shell with vars defined here.
 # ------------------------------------
+
+print("===<Variable List>===")
+print("string : 'S'")
+print("array : 'ary'")
+print("matrix : 'mat'")
+print("dictionary : 'dict'")
+print("SortedList : 'sorted_list'")
+
 vars = globals().copy()
 shell = code.InteractiveConsole(vars)
 shell.interact(banner = "Interactive console started (type 'quit()' to exit) : ")
