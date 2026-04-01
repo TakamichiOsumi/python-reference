@@ -4,13 +4,13 @@ N = int(input())
 T = list(map(int, input().split()))
 
 replace = 1000
-hourses = []
+top_three = []
 for i in range(3):
     idx = T.index(min(T))
-    hourses.append(idx)
+    top_three.append(idx)
     T[idx] = replace
 
 for i in range(3):
-    hourses[i] += 1
+    top_three[i] += 1
 
-print(*hourses)
+print(*top_three)
