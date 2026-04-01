@@ -9,17 +9,15 @@ import code
 
 # ------------------------------------
 # Collect negative numbers in a list.
+#
+# Also, add a single value in the list.
 # ------------------------------------
 ary = [1, 2, 3, -1, -2]
 new_ary = list(filter(lambda a:a < 0, ary))
 print(new_ary)
 # [-1, -2]
-
-# ------------------------------------
-# Add value to all elements in an array
-# ------------------------------------
-old = [1, 2, 3, 4, 5]
-new = [x + 10 for x in old]
+print([x + 10 for x in new_ary])
+# [9, 8]
 
 # ------------------------------------
 # Integer Division (//)
@@ -38,6 +36,9 @@ def convert_dec_to_n_adic(decimal, n):
         s = str(decimal % n) + s
         decimal = decimal // n
     return s
+
+print(convert_dec_to_n_adic(8, 2))
+# '1000'
 
 # ------------------------------------
 # Remove one leftmost char (or sub string)
@@ -160,7 +161,7 @@ print(dict)
 
 print("===<Variable List>===")
 print("string : 'S'")
-print("array : 'ary'")
+print("array : 'ary', 'new_ary'")
 print("matrix : 'mat'")
 print("dictionary : 'dict'")
 print("SortedList : 'sorted_list'")
