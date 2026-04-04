@@ -155,10 +155,15 @@ print(dict)
 # {'apple': 101, 'orange': 2, 'grape': 3, 'lemon': 4}
 
 # ------------------------------------
+# print() without a new line (line break)
+# ------------------------------------
+print("No line break", end="")
+print("")
+
+# ------------------------------------
 # Initialize and launch an interactive
 # shell with vars defined here.
 # ------------------------------------
-
 print("===<Variable List>===")
 print("string : 'S'")
 print("array : 'ary', 'new_ary'")
