@@ -2,23 +2,18 @@
 
 # import pdb
 
-# N = int(input())
-# S = input()
-
-N, M = map(int, input().split())
+N = int(input())
 X, A, B = map(int, input().split())
 
-count = 0
+strings = [ input() for _ in range(N) ]
+points = [ list(map(int, input().split())) for _ in range(N) ]
 
-points = []
-for i in range(N):
-    x, y = map(int, input().split())
-    points.append([x, y])
-    # pdb.set_trace()
+# pdb.set_trace()
+
+count = 0
+print(count)
 
 if True:
     print("Yes", "YES")
 else:
     print("No", "NO")
-
-print(count)
