@@ -164,15 +164,18 @@ print(dict)
 # Make a dictionary whose values have each isolated
 # different data structure. Below example shows set().
 #
+# Note : Using zip() to gererate dictionary is like
+# below.
+#
 # keys = ['a', 'b', 'c' ]
 # values = [ 1, 2, 3 ]
 # d = { key : val for key, val in zip(keys, values) }
 #
 # {'a': 1, 'b': 2, 'c': 3}
 # ------------------------------------
-char_dicts = { key : val for key, val
-               in zip(list(string.ascii_lowercase),
-                      [ set() for _ in range(len(string.ascii_lowercase)) ]) }
+keys_list = list(string.ascii_lowercase)
+char_dicts = { k : v for k, v
+               in zip(keys_list, [ set() for _ in keys_list ]) }
 char_dicts['a'].add(1)
 char_dicts['b'].add(2)
 char_dicts['c'].add(3)
