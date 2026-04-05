@@ -136,6 +136,12 @@ import string
 # print(string.ascii_letters)
 # print(string.ascii_uppercase)
 
+# Convert character and integer.
+print(ord('A'))
+print(ord('a'))
+print(chr(65))
+print(chr(66))
+
 # ------------------------------------
 # Dictionary (1)
 #
