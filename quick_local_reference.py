@@ -155,7 +155,7 @@ print(dict)
 # ------------------------------------
 # Dictionary (2)
 #
-# Make a dictionary whose values has each isolated
+# Make a dictionary whose values have each isolated
 # different data structure. Below example shows set().
 #
 # keys = ['a', 'b', 'c' ]
