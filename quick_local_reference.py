@@ -3,11 +3,6 @@
 import code
 
 # ------------------------------------
-# template
-# ------------------------------------
-# print("template")
-
-# ------------------------------------
 # Collect negative numbers in a list.
 #
 # Also, add a single value in the list.
@@ -142,7 +137,10 @@ import string
 # print(string.ascii_uppercase)
 
 # ------------------------------------
-# Dictionary
+# Dictionary (1)
+#
+# Add a new key if the dictionary doesn't have
+# the same. If it exists as key, apply some operation.
 # ------------------------------------
 dict = { "apple" : 1, "orange" : 2, "grape" : 3 , "lemon" : 4 }
 
@@ -153,6 +151,28 @@ else:
     dict[target] = 1
 print(dict)
 # {'apple': 101, 'orange': 2, 'grape': 3, 'lemon': 4}
+
+# ------------------------------------
+# Dictionary (2)
+#
+# Make a dictionary whose values has each isolated
+# different data structure. Below example shows set().
+#
+# keys = ['a', 'b', 'c' ]
+# values = [ 1, 2, 3 ]
+# d = { key : val for key, val in zip(keys, values) }
+#
+# {'a': 1, 'b': 2, 'c': 3}
+# ------------------------------------
+char_dicts = { key : val for key, val
+               in zip(list(string.ascii_lowercase),
+                      [ set() for _ in range(len(string.ascii_lowercase)) ]) }
+char_dicts['a'].add(1)
+char_dicts['b'].add(2)
+char_dicts['c'].add(3)
+char_dicts['c'].add(4)
+char_dicts['c'].add(5)
+print(char_dicts)
 
 # ------------------------------------
 # print() without a new line (line break)
