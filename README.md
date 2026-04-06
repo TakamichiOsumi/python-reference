@@ -12,6 +12,19 @@ $ source venv/bin/activate
 (venv) $ pip install -r requirements.txt
 ```
 
+## For comfortable local reference
+
+Execute python3 to start the console. Load the reference file.
+This enables key shortcuts such as Cntrl-a and Cntrl-d, while
+the direct execution of quick_local_reference.py disables them.
+
+
+```
+>>> import quick_local_reference
+>>> S
+'bcdefghiabc'
+```
+
 ## Notes
 
 Tested on only Mac OS X.
