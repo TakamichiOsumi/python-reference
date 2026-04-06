@@ -7,7 +7,7 @@ cat $latest_file | grep -vE "^[ \t]*#.*" | pbcopy
 while getopts "c" opt; do
     case "$opt" in
 	c)
-	    cp $latest_file ${latest_file}.backup
+	    cp $latest_file ${latest_file}.backup_`date '+%Y%m%d%H%M%S'`
 	    ;;
     esac
 done
