@@ -190,6 +190,10 @@ print("No line break", end="")
 print("")
 
 # ------------------------------------
+# Iterate array from the end index.
+# ------------------------------------
+
+# ------------------------------------
 # Initialize and launch an interactive
 # shell with vars defined here.
 # ------------------------------------
