@@ -164,12 +164,12 @@ print(dict)
 # Make a dictionary whose values have each isolated
 # different data structure. Below example shows set().
 #
-# Note : Using zip() to gererate dictionary is like
-# below.
+# Note : Using zip() to gererate dictionary requires
+# two lists like below.
 #
 # keys = ['a', 'b', 'c' ]
 # values = [ 1, 2, 3 ]
-# d = { key : val for key, val in zip(keys, values) }
+# d = { k : v for k, v in zip(keys, values) }
 #
 # {'a': 1, 'b': 2, 'c': 3}
 # ------------------------------------
