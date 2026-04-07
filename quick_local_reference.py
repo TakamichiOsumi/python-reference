@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import code
+
 
 # ------------------------------------
 # Collect negative numbers in a list.
@@ -13,6 +13,15 @@ print(new_ary)
 # [-1, -2]
 print([x + 10 for x in new_ary])
 # [9, 8]
+
+# ------------------------------------
+# Iterate array from the end index.
+#
+# The next code shows the print
+# output of -2, -1, 3, 2, 1.
+# ------------------------------------
+# for i in ary[::-1]:
+#     print(i)
 
 # ------------------------------------
 # Integer Division (//)
@@ -123,6 +132,7 @@ print(bit_brute_force(2, mat))
 # Characters
 # ------------------------------------
 import string
+
 # help(string)
 # ...
 #     ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -190,20 +200,32 @@ print("No line break", end="")
 print("")
 
 # ------------------------------------
-# Iterate array from the end index.
+# deque
 # ------------------------------------
+from collections import deque
+
+d = deque([1, 2, 3])
+d.append(4) # append an element at the end
+d.appendleft(0) # append an element at the front
+print(d)
+# deque([0, 1, 2, 3, 4])
+print(d.pop()) # pop from the end
+# 4
+print(d.popleft()) # pop from the front
+# 0
 
 # ------------------------------------
 # Initialize and launch an interactive
 # shell with vars defined here.
 # ------------------------------------
+import code
+
 print("===<Variable List>===")
 print("string : 'S'")
 print("array : 'ary', 'new_ary'")
 print("matrix : 'mat'")
 print("dictionary : 'dict'")
 print("SortedList : 'sorted_list'")
-
 vars = globals().copy()
 shell = code.InteractiveConsole(vars)
 shell.interact(banner = "Interactive console started (type 'quit()' to exit) : ")

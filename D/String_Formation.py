@@ -18,24 +18,24 @@ Q = int(input())
 
 d = deque(list(S))
 
-rotate = False
+reverse = False
 for _ in range(Q):
     q = input().split()
     if q[0] == "1":
-        rotate = False if rotate else True
+        reverse = False if reverse else True
     elif q[0] == "2":
         if q[1] == "1":
-            if rotate:
+            if reverse:
                 d.append(q[2])
             else:
                 d.appendleft(q[2])
         elif q[1] == "2":
-            if rotate:
+            if reverse:
                 d.appendleft(q[2])
             else:
                 d.append(q[2])
 
-if rotate:
+if reverse:
     for i in range(len(d) - 1, -1, -1):
         print(d[i], end="")
 else:
