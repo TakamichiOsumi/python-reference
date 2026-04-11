@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 
-
-
 # ------------------------------------
 # Collect negative numbers in a list.
 #
 # Also, add a single value in the list.
 # ------------------------------------
-ary = [1, 2, 3, -1, -2]
+ary = [1, 2, 3, -1, -2, 5]
 new_ary = list(filter(lambda a:a < 0, ary))
 print(new_ary)
 # [-1, -2]
 print([x + 10 for x in new_ary])
 # [9, 8]
+
+# ------------------------------------
+# Pick up some elements in array per
+# specific size.
+# ------------------------------------
+size = 3
+for start in range(0, len(ary), size):
+    print(ary[start : start + size])
+# [1, 2, 3]
+# [-1, -2, 5]
 
 # ------------------------------------
 # Iterate array from the end index.
