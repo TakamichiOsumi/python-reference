@@ -23,6 +23,20 @@ for start in range(0, len(ary), size):
 # [-1, -2, 5]
 
 # ------------------------------------
+# Sorting 'String' numbers shows
+# different result with 'Integer' numbers.
+# ------------------------------------
+str_ary = ["1", "2", "3", "4", "5",
+           "11", "12", "13"]
+str_ary.sort(reverse = True)
+int_ary = list(map(int, str_ary))
+int_ary.sort(reverse = True)
+print(str_ary)
+print(int_ary)
+# ['5', '4', '3', '2', '13', '12', '11', '1']
+# [13, 12, 11, 5, 4, 3, 2, 1]
+
+# ------------------------------------
 # Iterate array from the end index.
 #
 # The next code shows the print
