@@ -220,7 +220,8 @@ print(char_dicts)
 # keys order.
 #
 # Besides, recognize the difference
-# between array.sort() and sorted(array)
+# between list.sort() and
+# new_list = sorted(list).
 # ------------------------------------
 keys = [5, 4, 3, 1, 2, 6]
 values = ["a", "b", "c", "d", "e", "f"]
