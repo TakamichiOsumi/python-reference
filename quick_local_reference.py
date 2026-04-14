@@ -216,6 +216,30 @@ char_dicts['c'].add(5)
 print(char_dicts)
 
 # ------------------------------------
+# Print dictionary values in ascending
+# keys order.
+#
+# Besides, recognize the difference
+# between array.sort() and sorted(array)
+# ------------------------------------
+keys = [5, 4, 3, 1, 2, 6]
+values = ["a", "b", "c", "d", "e", "f"]
+my_dict = { k : v for k, v
+            in zip(keys, values) }
+
+keys = list(my_dict.keys())
+keys.sort()
+
+for k in keys:
+    print(k, my_dict[k])
+# 1 d
+# 2 e
+# 3 c
+# 4 b
+# 5 a
+# 6 f
+
+# ------------------------------------
 # print() without a new line (line break)
 # ------------------------------------
 print("No line break", end="")
