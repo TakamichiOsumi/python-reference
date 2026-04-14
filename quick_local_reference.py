@@ -231,6 +231,8 @@ my_dict = { k : v for k, v
 keys = list(my_dict.keys())
 keys.sort()
 
+# This 'keys' variable can be replaced
+# with sorted(my_dict.keys()).
 for k in keys:
     print(k, my_dict[k])
 # 1 d
