@@ -36,6 +36,14 @@ print(int_ary)
 # ['5', '4', '3', '2', '13', '12', '11', '1']
 # [13, 12, 11, 5, 4, 3, 2, 1]
 
+
+# ------------------------------------
+# String operation
+# ------------------------------------
+print("python".upper())
+print("PYTHON".lower())
+print("Python".swapcase())
+
 # ------------------------------------
 # Iterate array from the end index.
 #
