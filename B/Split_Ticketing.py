@@ -4,7 +4,36 @@ import itertools
 
 N = int(input())
 
-costs = [ list(map(int, input().split())) for _ in range(N - 1) ]
+# Key Takeaways:
+#
+# 1.  Write a simple logic to append zeros for the matrix of cost lists.
+#
+#     Avoid for loop and use list comprehension as described below.
+#     This simplifies the entire program and doesn't define unused variables,
+#     like 'padding' or 'l'.
+#
+#     * for loop
+#
+#      padding = 1
+#      cost_mat = []
+#      for i in range(len(costs)):
+#         l = costs[i]
+#         for j in range(padding):
+#            l.insert(0, 0)
+#         padding +=1
+#         cost_mat.append(l)
+#
+#     * list comprehension
+#
+#      cost_mat = [ [0] * (i+1) + list(map(int, input().split())) for i in range(N - 1) ]
+#
+# 2. Indicate the concrete number to select items for itertools functions.
+#
+# 3. Set a valid initial value for a True/False flag variable.
+#
+#    If the logic is to find something, 'found' flag should be false at the beginning.
+
+cost_mat = [ [0] * (i+1) + list(map(int, input().split())) for i in range(N - 1) ]
 
 def found_cheap_route(start, transit, end, cost_mat):
     c1 = cost_mat[start][end]
@@ -14,28 +43,20 @@ def found_cheap_route(start, transit, end, cost_mat):
     else:
         return False
 
-perms = itertools.permutations(range(0, N), 3)
-padding = 1
-cost_mat = []
-for i in range(len(costs)):
-    l = costs[i]
-    for j in range(padding):
-        l.insert(0, 0)
-    padding +=1
-    cost_mat.append(l)
+lists = map(list, itertools.permutations(range(0, N), 3))
 
-exist = False
-for p in perms:
-    p = list(p)
-    start = min(p)
-    end = max(p)
-    p.pop(p.index(end))
-    p.pop(p.index(start))
-    if found_cheap_route(start, p[0], end, cost_mat):
-        exist = True
+found = False
+for l in lists:
+    start = min(l)
+    end = max(l)
+    l.pop(l.index(end))
+    l.pop(l.index(start))
+    transit = l[0]
+    if found_cheap_route(start, transit, end, cost_mat):
+        found = True
         break
 
-if exist:
+if found:
     print("Yes")
 else:
     print("No")
