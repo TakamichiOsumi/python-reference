@@ -7,7 +7,7 @@
 # (2) Get used to the logics to calculate 'point symmetry'
 #     in a specific range within matrix.
 #
-#     Suppose the four corners of the range is decided by
+#     Suppose the four corners of the range are decided by
 #     min(height_range)    = top left
 #     max(height_range)    = bottom left
 #     min(width_range)     = top left
