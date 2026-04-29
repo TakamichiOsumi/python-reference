@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) Get used to the logics to calculate 'point symmetry'
+#     in a specific range of matrix.
+#
+#     comp_height = min(height_range) + max(height_range) - height
+#     comp_width = min(width_range) + max(width_range) - width
+#     area[height][width] == area[comp_height][comp_width]
+#
+# (2) Iterate a list item by the syntax 'for item in items:'
+
 import itertools
 
 H, W = map(int, input().split())
 
 def is_point_symmetry(h, w, area):
+    # Convert range two numbers to numbers list to iterate.
     h_set = set(range(h[0], h[1] + 1))
-    if len(h_set) == 0:
-        h_set = set(h[0])
     w_set = set(range(w[0], w[1] + 1))
-    if len(w_set) == 0:
-        w_set = set(w[0])
-
     for i in h_set:
         for j in w_set:
             h_idx = h[0] + h[1] - i
