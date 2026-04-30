@@ -22,7 +22,8 @@ from queue import Queue
 #     In this problem, as the 2nd example shows,
 #     there can be no route input. Then,
 #     abstracting unique cities from (a, b) doesn't
-#     work.
+#     work. The correct way to iterate all cities
+#     was 'for n in range(N + 1)'.
 
 def search_from_city(start_city, city_num, my_dict):
     q = Queue()
