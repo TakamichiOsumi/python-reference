@@ -55,6 +55,8 @@ def is_point_symmetry(h, w, area):
 h_ary = list(itertools.combinations(range(0, H), 2))
 w_ary = list(itertools.combinations(range(0, W), 2))
 
+# The itertools.combinations doesn't take care of
+# the single column case or row case. Add those cases.
 h_ary.extend([(i, i) for i in range(H)])
 w_ary.extend([(i, i) for i in range(W)])
 
