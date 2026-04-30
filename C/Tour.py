@@ -3,6 +3,27 @@
 import itertools
 from queue import Queue
 
+# Key Takeaways:
+#
+# (1)  Do not use single variable name for various
+#      contexts. This might lead to a confusing bug.
+#      In this problem, making 'start_city', 'cur_city',
+#      'visitable_city' was a good idea.
+#
+# (2) Check the existence of dictionary key, before
+#     accessing the dictionary[key].
+#
+# (3) Create a new set from a single value by writing
+#     new_set = set([value]).
+#
+# (4) Make the search speed faster by using set().
+#
+# (5) Scrutinize the problem input.
+#     In this problem, as the 2nd example shows,
+#     there can be no route input. Then,
+#     abstracting unique cities from (a, b) doesn't
+#     work.
+
 def search_from_city(start_city, city_num, my_dict):
     q = Queue()
     visited = [ False ] * (city_num + 1)
