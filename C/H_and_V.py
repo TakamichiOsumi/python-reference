@@ -72,10 +72,20 @@ W_patterns = bit_brute_force_patterns(W)
 
 # The main logic
 #
-# (a) Prepare a full list of bit brute force combinations for row and column.
-#     Then, cover full row and column pairs by itertools.product().
-# (b) Process one pair of selection of row and that of column.
+# (a) Prepare a full list of bit brute force combinations for row
+#     and column. Then, cover full row and column pairs by
+#     itertools.product().
+# (b) Process one pair of selection of row and that of column,
+#     one by one.
 # (c) Considering blank input cases ([]), count the black cells.
+#     Utilize the numpy's T attribute to access the columns.
+#     When both numbers of selection for rows and columns exceed
+#     one, counting the black cells contains some overlapped cells.
+#     Return the number without the duplicates.
+#     See the detail in count_black_cells().
+# (d) If black cells in the rows and columns pair are removed
+#     and the left number of black cells are equal to K, this is
+#     a new pattern to satisfy the problem.
 patterns = 0
 for row_column_pair in itertools.product(H_patterns, W_patterns):
     removed_blacks = count_black_cells(row_column_pair, area)

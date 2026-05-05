@@ -327,5 +327,5 @@ shell = code.InteractiveConsole(vars)
 shell.interact(banner = "Interactive console started (type 'quit()' to exit) : ")
 
 # ------------------------------------
-# Do not add any notes after the shell start.
+# DO NOT ADD ANY NOTES AFTER THE SHELL START
 # ------------------------------------
