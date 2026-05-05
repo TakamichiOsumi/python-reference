@@ -24,10 +24,10 @@ $ cp Env/snippets/python-mode/* ~/.emacs.d/snippets/python-mode
 
 Execute 'python3' to start the console. Load the reference file.
 This enables key shortcuts such as Cntrl-a and Cntrl-d, while
-the direct execution of quick_local_reference.py disables them.
+the direct execution of reference.py disables them.
 
 ```
->>> import quick_local_reference
+>>> import reference
 >>> help(string)
 ```
 
