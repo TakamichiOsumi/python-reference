@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) Get used to numpy.array and numpy.array.T.
+#     The numpy.array.T allows an easier access to matrix columns,
+#     according to problem conditions.
+# (2) Matrix transpose cannot be applied to numpy.array type
+#     when row is a string and each character isn't separated as list.
+# (3) For reference, add notes of numpy.array's basic operations
+#     such as ndim, shape[0] and shape[1].
+
 import numpy
 import itertools
 
 H, W, K = map(int, input().split())
 
+# Return the 2 ** N patterns from integer N input.
 def bit_brute_force_patterns(N):
     combinations = []
     for i in range(2 ** N):
@@ -49,6 +60,7 @@ def count_black_cells(row_column_pair, area):
 
         return count
 
+
 raw_area = [ list(input()) for _ in range(H) ]
 black_cells = sum([ raw_area[i].count('#') for i in range(H) ])
 area = numpy.array(raw_area)
@@ -57,6 +69,13 @@ area = numpy.array(raw_area)
 H_patterns = bit_brute_force_patterns(H)
 W_patterns = bit_brute_force_patterns(W)
 
+
+# The main logic
+#
+# (a) Prepare a full list of bit brute force combinations for row and column.
+#     Then, cover full row and column pairs by itertools.product().
+# (b) Process one pair of selection of row and that of column.
+# (c) Considering blank input cases ([]), count the black cells.
 patterns = 0
 for row_column_pair in itertools.product(H_patterns, W_patterns):
     removed_blacks = count_black_cells(row_column_pair, area)

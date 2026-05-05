@@ -159,6 +159,23 @@ print(bit_brute_force(2, mat))
 # [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]]
 
 # ------------------------------------
+# Bit Brute Force from N integer
+# ------------------------------------
+def bit_brute_force_patterns(N):
+    combinations = []
+    for i in range(2 ** N):
+        ary = []
+        for j in range(N):
+            if ((i >> j) & 1):
+                ary.append(j)
+        combinations.append(ary)
+
+    return combinations
+
+# print(bit_brute_force_patterns(3))
+# [[], [0], [1], [0, 1], [2], [0, 2], [1, 2], [0, 1, 2]]
+
+# ------------------------------------
 # Characters
 # ------------------------------------
 import string
@@ -272,6 +289,28 @@ print(d.popleft()) # pop from the front
 # 0
 
 # ------------------------------------
+# numpy
+# ------------------------------------
+import numpy
+
+npmat = numpy.array(range(24)).reshape(4, 6)
+print(npmat)
+# array([[ 0,  1,  2,  3,  4,  5],
+#        [ 6,  7,  8,  9, 10, 11],
+#        [12, 13, 14, 15, 16, 17],
+#        [18, 19, 20, 21, 22, 23]])
+print(npmat.ndim) # 2
+print(npmat.shape[0]) # 4
+print(npmat.shape[1]) # 6
+print(npmat.T)
+# array([[ 0,  6, 12, 18],
+#        [ 1,  7, 13, 19],
+#        [ 2,  8, 14, 20],
+#        [ 3,  9, 15, 21],
+#        [ 4, 10, 16, 22],
+#        [ 5, 11, 17, 23]])
+
+# ------------------------------------
 # Initialize and launch an interactive
 # shell with vars defined here.
 # ------------------------------------
@@ -286,3 +325,7 @@ print("SortedList : 'sorted_list'")
 vars = globals().copy()
 shell = code.InteractiveConsole(vars)
 shell.interact(banner = "Interactive console started (type 'quit()' to exit) : ")
+
+# ------------------------------------
+# Do not add any notes after the shell start.
+# ------------------------------------
