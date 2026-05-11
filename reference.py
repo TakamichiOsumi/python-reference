@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 
 # ------------------------------------
+# Array assignment
+# ------------------------------------
+length, *A = [5, 1, 2, 3, 4, 5]
+print(length == (len(A))) # True
+length, *A = [1, 1]
+print(length == len(A)) # True
+print(type(length)) # <class 'int'>
+print(type(A)) # <class 'list'>
+
+# ------------------------------------
 # Collect negative numbers in a list.
 #
 # Also, add a single value in the list.
