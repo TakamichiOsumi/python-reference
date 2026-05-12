@@ -14,6 +14,6 @@ count = 0
 print(count)
 
 if True:
-    print("Yes", "YES")
+    print("Yes")
 else:
-    print("No", "NO")
+    print("No")
