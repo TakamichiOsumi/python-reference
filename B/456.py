@@ -3,6 +3,7 @@
 # Key Takeaways:
 # (1) If the number of all of the combinations is small,
 #     counting them and calculate the result might be fast to submit the answer.
+# (2) itertools.product() can take several arguments flexibly.
 
 import itertools
 
