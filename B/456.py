@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+# (1) If the number of all of the combinations is small,
+#     counting them and calculate the result might be fast to submit the answer.
+
 import itertools
 
 dices = [ list(map(int, input().split())) for _ in range(3) ]
