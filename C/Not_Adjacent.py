@@ -31,8 +31,8 @@ for m in re.finditer(r"(aa+)|(bb+)|(cc+)", S):
 if prev_end != (len(S) - 1):
     sub_strings.append(S[prev_end:len(S)])
 
-# Key : length of sub string
-# Value : number of sub string whose length matches the key.
+# key : length of one specific sub string
+# value : number of sub strings whose length match the key.
 dict = { }
 count = len(S) # Count each char as 1.
 for ss in sub_strings:
