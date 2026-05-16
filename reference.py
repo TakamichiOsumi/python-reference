@@ -150,23 +150,6 @@ print(bit_brute_force(2, mat))
 # [[1, 1, 1], [3, 3, 3]],
 # [[2, 2, 2], [3, 3, 3]],
 # [[1, 1, 1], [2, 2, 2], [3, 3, 3]]]
-# print(bit_brute_force(4, mat))
-# [[],
-# [[1, 1, 1]],
-# [[2, 2, 2]],
-# [[1, 1, 1], [2, 2, 2]],
-# [[3, 3, 3]],
-# [[1, 1, 1], [3, 3, 3]],
-# [[2, 2, 2], [3, 3, 3]],
-# [[1, 1, 1], [2, 2, 2], [3, 3, 3]],
-# [[4, 4, 4]],
-# [[1, 1, 1], [4, 4, 4]],
-# [[2, 2, 2], [4, 4, 4]],
-# [[1, 1, 1], [2, 2, 2], [4, 4, 4]],
-# [[3, 3, 3], [4, 4, 4]],
-# [[1, 1, 1], [3, 3, 3], [4, 4, 4]],
-# [[2, 2, 2], [3, 3, 3], [4, 4, 4]],
-# [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]]
 
 # ------------------------------------
 # Bit Brute Force from N integer
@@ -332,6 +315,22 @@ print(npmat.T)
 #        [ 5, 11, 17, 23]])
 
 # ------------------------------------
+# Regular Expression
+#
+# Get the matched indexes to retrieve.
+# Note that the m.end(0) is the next
+# index of the last character captured
+# by the regular expression.
+# ------------------------------------
+import re
+S = "This is a test. foo and bar."
+for m in re.finditer(r"(foo)|(bar)", S):
+    print("Index=", m.start(0), "&", m.end(0),
+          ", Sub string : ", S[ m.start(0) : m.end(0) ])
+
+# ------------------------------------
+# * DO NOT ADD ANY NOTES AFTER THE SHELL START *
+#
 # Initialize and launch an interactive
 # shell with vars defined here.
 # ------------------------------------
@@ -346,7 +345,3 @@ print("SortedList : 'sorted_list'")
 vars = globals().copy()
 shell = code.InteractiveConsole(vars)
 shell.interact(banner = "Interactive console started (type 'quit()' to exit) : ")
-
-# ------------------------------------
-# DO NOT ADD ANY NOTES AFTER THE SHELL START
-# ------------------------------------
