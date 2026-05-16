@@ -28,29 +28,12 @@ for m in re.finditer(r"(aa+)|(bb+)|(cc+)", S):
     # of the regular expression match.
     prev_end = m.end(0) - 1
 
+# If m.end(0) didn't reach the end of 'S',
+# add the last substring based on prev_end.
 if prev_end != (len(S) - 1):
     sub_strings.append(S[prev_end:len(S)])
 
-# key : length of one specific sub string
-# value : number of sub strings whose length match the key.
-dict = { }
-count = len(S) # Count each char as 1.
-for ss in sub_strings:
-    if len(ss) in dict.keys():
-        dict[len(ss)] += 1
-    else:
-        dict[len(ss)] = 1
-
-keys = dict.keys()
-for key in keys:
-    if key == 2:
-        # Consider the case when the two-length
-        # strings appear in S many times.
-        count += (dict[2] * 1)
-    else:
-        sum = 0
-        for i in range(2, key + 1):
-            sum += (key - i) + 1
-        count += (sum * dict[key])
-
-print(count % 998244353)
+count = len(S)
+for s in sub_strings:
+    count += (len(s) * (len(s) - 1) / 2)
+print(int(count % 998244353))
