@@ -10,6 +10,7 @@ else
     fi
     mkdir $1
     cd $1
+    # Prepare some files in advance.
     cp ./../snippets.py A.py
     touch A_{1..3}.txt
     cp ./../snippets.py B.py
@@ -20,5 +21,9 @@ else
     touch D_{1..3}.txt
     cp ./../snippets.py E.py
     touch E_{1..3}.txt
+    # Copy utility scripts.
+    cp ./../pbcopy_latest.sh ./
+    cp ./../execute_latest.sh ./
+    cp ./../debug_latest.sh ./
     echo "Created a new directory"
 fi
