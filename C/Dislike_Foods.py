@@ -1,49 +1,42 @@
 #!/usr/bin/env python3
 
-# import pdb
+# Key Takeaways:
+#
+# (1) Do not consume the time for "time-consuming" fruitless implementation
+#     which apparently cannot achieve the time limitation and leads to the TLE.
 
-# from sortedcontainers import SortedList
-# from collections import deque
-# import itertools
-# import numpy
-# import re
-
-import copy
+from sortedcontainers import SortedList
 
 N, M = map(int, input().split())
-
 menus = []
 for i in range(M):
     K, *A = list(map(int, input().split()))
     menu = set(A)
     menus.append(menu)
-
 B = list(map(int, input().split()))
 
-my_dict = {}
+# Reveal the dates by which ingredients will be allowed to be used.
+ingredient_open_day = {}
 for i in range(len(B)):
-    my_dict[B[i]] = i
+    ingredient_open_day[B[i]] = i # Start from 0, 1, ... len(B) - 1
 
-# print(my_dict)
-
-# Main Logic
-#
-# Fetch all corresponding required days for each ingredients.
-# Get the max required day from this data
+# Fetch the max required days for each menu.
 days_menu = { }
 for menu in menus:
-    longest_day = max([my_dict.get(m) for m in menu]) + 1
+    # This below code is more time-consuming than the simple call of max function.
+    # longest_day = max(SortedList([ingredient_open_day.get(m) for m in menu])) + 1
 
-    # Sort out the required days per each day.
+    longest_day = max([ingredient_open_day.get(m) for m in menu]) + 1
+
+    # Sort out the max required days per each day.
     if longest_day in days_menu.keys():
         days_menu[longest_day] += 1
     else:
         days_menu[longest_day] = 1
 
-# print(days_menu)
+# Print the final result.
 total_count = 0
 for i in range(1, len(B) + 1):
     if i in days_menu.keys():
         total_count += days_menu[i]
     print(total_count)
-
