@@ -9,10 +9,18 @@
 # import re
 
 N = int(input())
+N, M = map(int, input().split())
 X, A, B = map(int, input().split())
 
 strings = [ input() for _ in range(N) ]
 points = [ list(map(int, input().split())) for _ in range(N) ]
+
+# Handle matrix
+H, W = map(int, input().split())
+for i in range(H):
+    for j in range(W):
+        print("", end = "")
+    print("")
 
 # pdb.set_trace()
 
