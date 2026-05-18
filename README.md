@@ -34,7 +34,3 @@ the direct execution of reference.py disables them.
 ## Notes
 
 Tested on only Mac OS X.
-
-Newly added scripts are stored as executable files,
-to make it run comfortably on the local testing environment.
-This is to reduce typing commands, even one character.
