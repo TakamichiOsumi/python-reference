@@ -314,6 +314,14 @@ print(npmat.T)
 #        [ 4, 10, 16, 22],
 #        [ 5, 11, 17, 23]])
 
+
+# ------------------------------------
+# Another way to extract columns
+# ------------------------------------
+columns = list(zip(*mat))
+print("columns=", columns)
+# columns= [(1, 2, 3, 4, 5), (1, 2, 3, 4, 5), (1, 2, 3, 4, 5)]
+
 # ------------------------------------
 # Regular Expression
 #
