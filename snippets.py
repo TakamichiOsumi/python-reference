@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 
-# import pdb
+# Notes of emacs key-bindings
+#
+# C-l r : kill-region
+# C-l w : kill word from the cursor position
+# C-l a : kill until the beginning of line
+# C-l e : kill until the end of line
+# C-l u : kill until the end of the buffer
 
+# C-l C-m : comment-or-uncomment-region
+
+# import pdb
 # from sortedcontainers import SortedList
 # from collections import deque
 # import itertools
