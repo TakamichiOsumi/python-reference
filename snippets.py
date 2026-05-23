@@ -7,10 +7,8 @@
 # C-l a : kill until the beginning of line
 # C-l e : kill until the end of line
 # C-l u : kill until the end of the buffer
-
 # C-l C-m : comment-or-uncomment-region
 
-# import pdb
 # from sortedcontainers import SortedList
 # from collections import deque
 # import itertools
@@ -19,19 +17,12 @@
 
 N = int(input())
 N, M = map(int, input().split())
-X, A, B = map(int, input().split())
+S = [ input() for _ in range(N) ]
+X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 
-strings = [ input() for _ in range(N) ]
-points = [ list(map(int, input().split())) for _ in range(N) ]
-
-# Handle matrix
 H, W = map(int, input().split())
-for i in range(H):
-    for j in range(W):
-        print("", end = "")
-    print("")
-
-# pdb.set_trace()
+# C-l C-y r : yas-reload-all
+# ij<TAB> : double-loop
 
 count = 0
 print(count)
