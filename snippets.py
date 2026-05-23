@@ -24,9 +24,6 @@ H, W = map(int, input().split())
 # C-l C-y r : yas-reload-all
 # ij<TAB> : double-loop
 
-count = 0
-print(count)
-
 if True:
     print("Yes")
 else:
