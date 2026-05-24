@@ -15,6 +15,12 @@
 # import numpy
 # import re
 
+debug_mode = True
+def p(var):
+    global debug_mode
+    if debug_mode:
+        print("DEBUG:", var)
+
 N = int(input())
 N, M = map(int, input().split())
 S = [ input() for _ in range(N) ]
