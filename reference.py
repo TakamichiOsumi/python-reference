@@ -198,16 +198,28 @@ print(chr(66))
 # Add a new key if the dictionary doesn't have
 # the same. If it exists as key, apply some operation.
 # ------------------------------------
-dict = { "apple" : 1, "orange" : 2, "grape" : 3 , "lemon" : 4 }
+my_dict = { "apple" : 1, "orange" : 2, "grape" : 3 , "lemon" : 4 }
 
 target = "apple"
-if target in dict.keys():
-    dict[target] += 100
+if target in my_dict.keys():
+    my_dict[target] += 100
 else:
-    dict[target] = 1
-print(dict)
+    my_dict[target] = 1
+print(my_dict)
 # {'apple': 101, 'orange': 2, 'grape': 3, 'lemon': 4}
 
+# ------------------------------------
+# Dictionary (2)
+#
+# Sort key-value pair according to values.
+# Below code shows the ascending order output.
+# ------------------------------------
+for key, value in sorted(my_dict.items(), key = lambda x:x[1]):
+    print("sorted=", key, value)
+# sorted= orange 2
+# sorted= grape 3
+# sorted= lemon 4
+# sorted= apple 101
 
 # ------------------------------------
 # Set operations
@@ -348,7 +360,7 @@ print("===<Variable List>===")
 print("string : 'S'")
 print("array : 'ary', 'new_ary'")
 print("matrix : 'mat'")
-print("dictionary : 'dict'")
+print("dictionary : 'my_dict'")
 print("SortedList : 'sorted_list'")
 vars = globals().copy()
 shell = code.InteractiveConsole(vars)
