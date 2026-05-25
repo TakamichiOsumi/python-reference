@@ -305,6 +305,18 @@ print(d.popleft()) # pop from the front
 # 0
 
 # ------------------------------------
+# Counter
+#
+# Count each elements and generate
+# dictionary.
+# ------------------------------------
+from collections import Counter
+
+counts = Counter(list("aaabbcdddde"))
+print("char counts =", counts)
+# char counts = Counter({'d': 4, 'a': 3, 'b': 2, 'c': 1, 'e': 1})
+
+# ------------------------------------
 # numpy
 # ------------------------------------
 import numpy
