@@ -5,7 +5,7 @@ N, M = map(int, input().split())
 my_dict = {}
 for i in range(1, N + 1):
     my_dict[i] = set()
-    
+
 for _ in range(M):
     a, b = map(int, input().split())
     my_dict[a].add(b)
@@ -18,4 +18,3 @@ for i in range(1, N + 1):
     if len(smaller) == 1:
         cnt += 1
 print(cnt)
-
