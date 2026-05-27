@@ -2,7 +2,7 @@
 
 # Notes of emacs key-bindings
 #
-# C-l r : kill-region
+# C-l k : kill-region
 # C-l w : kill word from the cursor position
 # C-l a : kill until the beginning of line
 # C-l e : kill until the end of line
