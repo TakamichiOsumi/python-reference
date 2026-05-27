@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
 N = int(input())
-A, B, C = map(int, input().split())
-
+Num = list(map(int, input().split()))
+sorted_Num = sorted(Num, reverse = True)
+A = sorted_Num[0]
+B = sorted_Num[1]
+C = sorted_Num[2]
 min_val = 10000
 for i in range(10000):
     for j in range(10000):
-        value = i * A + j * B
-        if N < value or (N - value) % C != 0:
-            continue
-        tmp = i + j + (N - value) // C
-        if min_val > tmp:
-            min_val = tmp
+        left = N - (i * A + j * B)
+        if left % C == 0 and left >= 0:
+            if (i + j + (left // C)) <= 9999:
+                min_val = min(i + j + (left // C), min_val)
 print(min_val)
