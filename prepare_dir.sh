@@ -21,9 +21,5 @@ else
     touch D_{1..3}.txt
     cp ./../snippets.py E.py
     touch E_{1..3}.txt
-    # Copy utility scripts.
-    cp ./../pbcopy_latest.sh ./
-    cp ./../execute_latest.sh ./
-    cp ./../debug_latest.sh ./
     echo "Created a new directory"
 fi
