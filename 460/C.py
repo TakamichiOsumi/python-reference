@@ -7,10 +7,6 @@ N, M = map(int, input().split())
 A = deque(SortedList(list(map(int, input().split()))))
 B = deque(SortedList(list(map(int, input().split()))))
 
-# debug
-# print(A)
-# print(B)
-
 cnt = 0
 while len(A) != 0 and len(B) != 0:
 
@@ -29,4 +25,3 @@ while len(A) != 0 and len(B) != 0:
                 a = A.popleft()
 
 print(cnt)
-
