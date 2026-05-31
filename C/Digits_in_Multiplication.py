@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
 
-from sortedcontainers import SortedSet
-
 def get_divisors(N):
-    div = SortedSet([])
     i = 2
     last_pairs = []
     while True:
         if i * i > N:
             break
         if N % i == 0:
-            div.add(i)
-            if N // i != i:
-                div.add(N // i)
             last_pairs = [i, N // i]
         i += 1
     return last_pairs
