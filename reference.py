@@ -193,11 +193,17 @@ def prime_factorization(orig_N):
     return factors
 
 print("prime factors of 7=", prime_factorization(7))
+# prime factors of 7= [7]
 print("prime factors of 125=", prime_factorization(125))
+# prime factors of 125= [5, 5, 5]
 print("prime factors of 36=", prime_factorization(36))
+# prime factors of 36= [2, 2, 3, 3]
 print("prime factors of 97=", prime_factorization(97))
+# prime factors of 97= [97]
 print("prime factors of 240=", prime_factorization(240))
+# prime factors of 240= [2, 2, 2, 2, 3, 5]
 print("prime factors of 2020=", prime_factorization(2020))
+# prime factors of 2020= [2, 2, 5, 101]
 
 # ------------------------------------
 # itertools
