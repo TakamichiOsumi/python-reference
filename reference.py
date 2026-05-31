@@ -193,7 +193,7 @@ def prime_factorization(orig_N):
     return factors
 
 print("prime factors of 7=", prime_factorization(7))
-print("prime factors of 45=", prime_factorization(125))
+print("prime factors of 125=", prime_factorization(125))
 print("prime factors of 36=", prime_factorization(36))
 print("prime factors of 97=", prime_factorization(97))
 print("prime factors of 240=", prime_factorization(240))
