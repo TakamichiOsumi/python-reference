@@ -119,6 +119,12 @@ def get_divisors(N, include_edges = True, include_pair = True):
         div = SortedSet([])
     i = 2
     while True:
+        # Continue the iteration until the is math.sqrt(N).
+        # math.sqrt(N) ** 2 == N and
+        # when any divisor is found equal to or less than
+        # math.sqrt(N), then the couterpart (pair) is
+        # already found as N // i (in the path of
+        # 'include_pair' == True.
         if i * i > N:
             break
         if N % i == 0:
