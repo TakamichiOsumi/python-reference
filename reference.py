@@ -96,12 +96,32 @@ S = S.replace('a', '', count = 1)
 # ------------------------------------
 # SortedList
 # ------------------------------------
-from sortedcontainers import SortedList
+from sortedcontainers import SortedList, SortedSet
 sorted_list = SortedList([1, 2, 3, 4, 5])
 sorted_list.add(6)
 sorted_list.add(7)
 print(sorted_list)
 # [1, 2, 3, 4, 5, 6, 7]
+
+# ------------------------------------
+# List up divisors as SortedSet
+# ------------------------------------
+def get_divisors(N):
+    div = SortedSet([1, N])
+    i = 2
+    while True:
+        if i * i > N:
+            break
+        if N % i == 0:
+            div.add(i)
+            if N // i != i:
+                div.add(N // i)
+        i += 1
+    return div
+
+print("divisors of 36 =", get_divisors(36))
+# divisors of 36 = SortedSet([1, 2, 3, 4, 6, 9, 12, 18, 36])
+
 
 # ------------------------------------
 # itertools
