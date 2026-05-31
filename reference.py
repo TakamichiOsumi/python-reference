@@ -146,6 +146,61 @@ print("divisors of 36 (include_edges = True, include_pair = False)=",
       get_divisors(36, include_edges = True, include_pair = False))
 # divisors of 36 (include_edges = True, include_pair = False)= SortedSet([1, 2, 3, 4, 6, 36])
 
+
+# ------------------------------------
+# Prime Factorization
+# ------------------------------------
+def prime_factorization(orig_N):
+    N = orig_N
+    print("1st N=", N)
+    factors = []
+    i = 2
+    while True:
+        if i * i > orig_N:
+            break
+        if N % i == 0:
+            # Continue until 'i' can divide N.
+            while N % i == 0:
+                factors.append(i)
+                N = N // i
+                print(N)
+        i += 1
+
+    # If the while loop (N % i == 0) sets N to 1,
+    # then the prime factorization ended. No
+    # additional append is required.
+    #
+    # The example for this is 125.
+    # 125 changes like 25 => 5 => 1.
+    #
+    # If the last N is equal to 1, it means
+    # the last divisor 'i' divided the same value
+    # as i // i <=> N // N.
+    #
+    # Meanwhile, when the last N is not equal to 1,
+    # the last value didn't divide the same value,
+    # unlike the above.
+    #
+    # The examples for this is 7, 97 and 2020.
+    # The cases should be the original N is a prime
+    # number or the quotient of 'i' is bigger than
+    # math.sqrt(N).
+    #
+    # When N = 2020 changes like 1010 => 505
+    # and i=5 divides 505 to 101, the last 101 is
+    # the left value as N. Do not miss this value.
+    if N != 1:
+        factors.append(N)
+
+    return factors
+
+print("prime factors of 7=", prime_factorization(7))
+print("prime factors of 45=", prime_factorization(45))
+print("prime factors of 36=", prime_factorization(36))
+print("prime factors of 97=", prime_factorization(97))
+print("prime factors of 240=", prime_factorization(240))
+print("prime factors of 2020=", prime_factorization(2020))
+
 # ------------------------------------
 # itertools
 # ------------------------------------
