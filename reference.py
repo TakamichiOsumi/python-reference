@@ -103,25 +103,42 @@ sorted_list.add(7)
 print(sorted_list)
 # [1, 2, 3, 4, 5, 6, 7]
 
-# ------------------------------------
+# --------------------------------------------------
 # List up divisors as SortedSet
-# ------------------------------------
-def get_divisors(N):
-    div = SortedSet([1, N])
+#
+# If 'include_edges' is True, then add both 1 and N
+# to the return value.
+#
+# If 'include_pair' is True, then add divisor and
+# its counterpair when N % divisor == 0.
+# --------------------------------------------------
+def get_divisors(N, include_edges = True, include_pair = True):
+    if include_edges:
+        div = SortedSet([1, N])
+    else:
+        div = SortedSet([])
     i = 2
     while True:
         if i * i > N:
             break
         if N % i == 0:
             div.add(i)
-            if N // i != i:
+            if include_pair and N // i != i:
                 div.add(N // i)
         i += 1
     return div
 
 print("divisors of 36 =", get_divisors(36))
 # divisors of 36 = SortedSet([1, 2, 3, 4, 6, 9, 12, 18, 36])
-
+print("divisors of 36 (include_edges = False)=",
+      get_divisors(36, include_edges = False))
+# divisors of 36 (include_edges = False)= SortedSet([2, 3, 4, 6, 9, 12, 18])
+print("divisors of 36 (include_edges & include_pair = False)=",
+      get_divisors(36, include_edges = False, include_pair = False))
+# divisors of 36 (include_edges & include_pair = False)= SortedSet([2, 3, 4, 6])
+print("divisors of 36 (include_edges = True, include_pair = False)=",
+      get_divisors(36, include_edges = True, include_pair = False))
+# divisors of 36 (include_edges = True, include_pair = False)= SortedSet([1, 2, 3, 4, 6, 36])
 
 # ------------------------------------
 # itertools
