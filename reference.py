@@ -152,7 +152,6 @@ print("divisors of 36 (include_edges = True, include_pair = False)=",
 # ------------------------------------
 def prime_factorization(orig_N):
     N = orig_N
-    print("1st N=", N)
     factors = []
     i = 2
     while True:
@@ -163,7 +162,6 @@ def prime_factorization(orig_N):
             while N % i == 0:
                 factors.append(i)
                 N = N // i
-                print(N)
         i += 1
 
     # If the while loop (N % i == 0) sets N to 1,
@@ -195,7 +193,7 @@ def prime_factorization(orig_N):
     return factors
 
 print("prime factors of 7=", prime_factorization(7))
-print("prime factors of 45=", prime_factorization(45))
+print("prime factors of 45=", prime_factorization(125))
 print("prime factors of 36=", prime_factorization(36))
 print("prime factors of 97=", prime_factorization(97))
 print("prime factors of 240=", prime_factorization(240))
