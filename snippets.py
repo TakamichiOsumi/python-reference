@@ -8,6 +8,7 @@
 # C-l e : kill until the end of line
 # C-l u : kill until the end of the buffer
 # C-l C-m : comment-or-uncomment-region
+# C-l C-y r : yas-reload-all
 
 # from sortedcontainers import SortedList, SortedDict, SortedSet
 # from collections import deque
@@ -15,22 +16,15 @@
 # import numpy
 # import re
 
-# debug_mode = True
-# def p(var):
-#     global debug_mode
-#     if debug_mode:
-#         print("DEBUG:", var)
+# Notes of yasnippets
+#
+# debug_mode<TAB> : Set up 'p' function for debug.
+# ij<TAB> : expand double-loop with i and j variable.
+# ifelse<TAB> : expand 'if' and 'else' pair.
+# ifelif<TAB> : expand 'if','elif' and 'else' set.
 
 N = int(input())
 N, M = map(int, input().split())
 S = [ input() for _ in range(N) ]
 X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 
-H, W = map(int, input().split())
-# C-l C-y r : yas-reload-all
-# ij<TAB> : double-loop
-
-if True:
-    print("Yes")
-else:
-    print("No")
