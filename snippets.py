@@ -8,7 +8,6 @@
 # C-l e : kill until the end of line
 # C-l u : kill until the end of the buffer
 # C-l C-m : comment-or-uncomment-region
-# C-l C-y r : yas-reload-all
 
 # from sortedcontainers import SortedList, SortedDict, SortedSet
 # from collections import deque
@@ -27,4 +26,3 @@ N = int(input())
 N, M = map(int, input().split())
 S = [ input() for _ in range(N) ]
 X_Y = [ list(map(int, input().split())) for _ in range(N) ]
-
