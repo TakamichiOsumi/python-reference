@@ -11,7 +11,7 @@ while True:
     set_a = set(A)
     common = set_a & required
     if len(common) < len(required):
-       break 
+       break
     cnt += 1
     A.pop()
 
