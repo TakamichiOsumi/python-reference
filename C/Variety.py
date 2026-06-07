@@ -12,6 +12,19 @@ for i in range(N):
     else:
         C_V[C] = SortedList([V])
 
+# Key Takeaways:
+#
+# Remembering value => index where value
+# can contain duplicate (same) values
+# can't be expressed as dictionary.
+# NG : { Value 500 => 1st Color,
+#        Value 500 => 2nd Color }.
+#
+# To address this, consider a tuple
+# to make pair of (Color, Max Value)
+# and store all of the pairs in this format.
+# This can be sorted and works to remember
+# each index.
 max_group = []
 for key in C_V.keys():
     v = C_V[key][len(C_V[key]) - 1]
@@ -32,8 +45,3 @@ part_A = [ decided[i][1] for i in range(len(decided)) ]
 part_B = sorted(left, reverse = True)[:(K - M)]
 
 print(sum((part_A)) + sum(part_B))
-
-
-    
-    
-
