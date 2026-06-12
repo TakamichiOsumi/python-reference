@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+N = int(input())
+N, M = map(int, input().split())
+Strings = [ input() for _ in range(N) ]
+X_Y = [ list(map(int, input().split())) for _ in range(N) ]
+
 # Notes of emacs key-bindings
 #
 # C-l k : kill-region
@@ -21,8 +26,3 @@
 # ij<TAB> : expand double-loop with i and j variable.
 # ifelse<TAB> : expand 'if' and 'else' pair.
 # ifelif<TAB> : expand 'if','elif' and 'else' set.
-
-N = int(input())
-N, M = map(int, input().split())
-S = [ input() for _ in range(N) ]
-X_Y = [ list(map(int, input().split())) for _ in range(N) ]
