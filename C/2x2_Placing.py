@@ -7,6 +7,8 @@
 #     caused by RE(MLE).
 # (2) Avoid add() to add each list member to SortedSet.
 #     Use update().
+# (3) Don't create a matrix or an array to cover all of
+#     the area, because of the possible large N = 10**9.
 
 from sortedcontainers import SortedSet
 
