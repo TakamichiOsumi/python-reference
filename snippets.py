@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# from sortedcontainers import SortedList, SortedDict, SortedSet
+# from collections import deque
+# import itertools
+# import numpy
+# import re
+
 N = int(input())
 N, M = map(int, input().split())
 Strings = [ input() for _ in range(N) ]
@@ -13,12 +19,6 @@ X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 # C-l e : kill until the end of line
 # C-l u : kill until the end of the buffer
 # C-l C-m : comment-or-uncomment-region
-
-# from sortedcontainers import SortedList, SortedDict, SortedSet
-# from collections import deque
-# import itertools
-# import numpy
-# import re
 
 # Notes of yasnippets
 #
