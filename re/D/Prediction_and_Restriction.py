@@ -1,12 +1,25 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) The essential point of the main logic is
+#     appending temtative 'x' to the 'record', when undecided
+#     choice can be made.
+#     This 'x' contributes to future (idx + K) win, because
+#     it avoids declaring a concrete choice and the future
+#     (idx + K) choice can choose whatever it wants,
+#     when the idx choice cannot win.
+#
+# (2) Writing up the win-lose relationship as below comments
+#     helps to write the scoring logics.
+#     ----------
+#     'r' <= 'p'
+#     'p' <= 's'
+#     's' <= 'r'
+
 N, K = map(int, input().split())
 Rock_Score, Scissors_Score, Paper_Score = map(int, input().split())
 Opponent = list(input())
-
-# 'r' <= 'p'
-# 'p' <= 's'
-# 's' <= 'r'
 
 score = 0
 record = [None] * N
