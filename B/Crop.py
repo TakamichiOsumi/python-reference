@@ -2,46 +2,37 @@
 
 H, W = map(int, input().split())
 
-area = []
-for i in range(H):
-    l = list(input())
-    area.append(l)
+area = [ list(input()) for _ in range(H) ]
 
-idx = 0
 while True:
-    t_or_f = [ area[idx][j] == '.' for j in range(W) ]
+    t_or_f = [ area[0][j] == '.' for j in range(W) ]
     if all(t_or_f):
         area.pop(0)
     else:
         break
-# print("done=", area)
+
 while True:
     t_or_f = [ area[len(area) - 1][j] == '.' for j in range(W) ]
-    # print(area)
     if all(t_or_f):
         area.pop(len(area) - 1)
     else:
         break
 
-dellist = lambda items, indexes: [item for index, item in enumerate(items) if index not in indexes]
 columns = list(zip(*area))
 
-idx = 0
 while True:
-    t_or_f = [ columns[idx][j] == '.' for j in range(len(columns[0])) ]
+    t_or_f = [ columns[0][j] == '.' for j in range(len(columns[0])) ]
     if all(t_or_f):
         columns.pop(0)
     else:
         break
 
-# print(columns)
 while True:
     t_or_f = [ columns[len(columns) - 1][j] == '.' for j in range(len(columns[0])) ]
     if all(t_or_f):
         columns.pop(len(columns) - 1)
     else:
         break
-
 
 rows = list(zip(*columns))
 for r in rows:
