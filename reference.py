@@ -11,6 +11,16 @@ print(type(length)) # <class 'int'>
 print(type(A)) # <class 'list'>
 
 # ------------------------------------
+# Removing multiple indexes from array
+# ------------------------------------
+
+del_indexes = lambda items, indexes: [item for index, item in enumerate(items) if index not in indexes]
+ary = ["aaa", "bbb", "ccc", "ddd", "eee"]
+
+print("del indexes=", del_indexes(ary, [0, 1, 2]))
+del indexes= ['ddd', 'eee']
+
+# ------------------------------------
 # Collect negative numbers in a list.
 #
 # Also, add a single value in the list.
