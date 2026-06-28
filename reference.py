@@ -18,7 +18,7 @@ del_indexes = lambda items, indexes: [item for index, item in enumerate(items) i
 ary = ["aaa", "bbb", "ccc", "ddd", "eee"]
 
 print("del indexes=", del_indexes(ary, [0, 1, 2]))
-del indexes= ['ddd', 'eee']
+# del indexes= ['ddd', 'eee']
 
 # ------------------------------------
 # Collect negative numbers in a list.
