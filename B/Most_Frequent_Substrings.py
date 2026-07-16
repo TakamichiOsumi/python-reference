@@ -2,6 +2,18 @@
 
 from sortedcontainers import SortedList, SortedDict, SortedSet
 
+# Key Takeaways :
+#
+# (1) If the problem description is unclear, then read the sample carefully.
+#
+# (2) Iterating the inner substring whose length is K can be achieved by below.
+#     + 1 in the 'len(S) - K + 1' is the start character for the last substring.
+#
+#     -------------------------------
+#     for i in range(len(S) - K + 1):
+#         sub = S[i:i+K]
+#     -------------------------------
+
 N, K = map(int, input().split())
 S = input()
 
