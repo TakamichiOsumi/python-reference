@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) Reuse the reference function and save the time.
+#
+# (2) If 'i' is set to large enough and the division of 'N / (p ** i)'
+#     is repeatedly executed, having 'break' in the middle of the loop
+#     works to find the biggeest 'i' during the loop. In this example,
+#     the end limit for 'i' is set to '10 ** 6'.
+
 from sortedcontainers import SortedList, SortedDict, SortedSet
 import math
 
