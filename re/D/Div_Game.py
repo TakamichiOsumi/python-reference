@@ -4,10 +4,15 @@
 #
 # (1) Reuse the reference function and save the time.
 #
-# (2) If 'i' is set to large enough and the division of 'N / (p ** i)'
-#     is repeatedly executed, having 'break' in the middle of the loop
-#     works to find the biggeest 'i' during the loop. In this example,
-#     the end limit for 'i' is set to '10 ** 6'.
+# (2) If 'i' limit is set to large enough value and the division of
+#     'N / (p ** i)' is repeatedly executed, having 'break' in the middle
+#     of the loop works to find the biggest 'i' during the loop.
+#     In this example, the end limit for 'i' is set to '10 ** 6'.
+#
+# (3) Consider the problem constraint.
+#     'Z = p ** e' means Z cannot be 6, 12, 26, since those values
+#     are expressed as 6 ** 1, 12 ** 1, 26 ** 1, and p cannot be
+#     prime numbers.
 
 from sortedcontainers import SortedList, SortedDict, SortedSet
 import math
