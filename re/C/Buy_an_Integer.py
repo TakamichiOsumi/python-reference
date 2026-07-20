@@ -1,5 +1,21 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) Use 'right' and 'left' vars to control search range.
+#
+# (2) Check if the integer 1 can be bought at the beginning.
+#
+# (3) Relearn the purpose and conditions for binary search algorithm.
+#
+#     The purpose is to find a value or position that satisfies
+#     some restrictions, from sorted data quickly.
+#
+#     Conditions:
+#     - The input array are sorted.
+#     - The array can be split into two parts, satisfactory range or not.
+#     - The middle index item can be used to split the two ranges.
+
 from sortedcontainers import SortedList, SortedDict, SortedSet
 
 A, B, X = map(int, input().split())
