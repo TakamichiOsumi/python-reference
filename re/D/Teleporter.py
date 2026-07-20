@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+
+# Key Takeaways :
+#
+# There is no guarantee that the input are definitely looped.
+# Therefore, address the cases where the input arrays are not circled
+# by checking K == 0, and print the city index at the point of time.
+
 from sortedcontainers import SortedList, SortedDict, SortedSet
 from collections import deque
 
@@ -26,6 +33,7 @@ for _ in range(10 ** 18 + 1):
 
     next_idx = A[cur_idx] - 1
     if next_idx in visited_city:
+        # Move to the initial city of the loop by consuming 1.
         K -= 1
         loop_ini_pos = visited_route.index(next_idx)
         loop_len = len(visited_route) - loop_ini_pos
