@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# from sortedcontainers import SortedList, SortedDict, SortedSet
-# from collections import deque
-# import itertools
-# import numpy
 import re
 
 S = input()
@@ -20,4 +16,3 @@ for i in range(len(splited) - 1):
                    len(splited[i + 1]))
 
 print(ans)
-
