@@ -6,6 +6,7 @@
 # import numpy
 # import re
 
+S = input()
 N = int(input())
 N, M = map(int, input().split())
 Strings = [ input() for _ in range(N) ]
