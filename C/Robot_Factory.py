@@ -12,6 +12,8 @@
 #     as 'b_ins' and 'h_key' like below.
 #
 # (2) SortedList provides something like leftpop() in the deque, as 'pop(0)'.
+#     The order for this function call is O(log(N)) - approximate,
+#     explained in https://grantjenks.com/docs/sortedcontainers/sortedlist.html.
 
 from sortedcontainers import SortedList, SortedDict, SortedSet
 
