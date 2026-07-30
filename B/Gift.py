@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-# from sortedcontainers import SortedList, SortedDict, SortedSet
-# from collections import deque
-# import itertools
-# import numpy
-# import re
-
+# Key Takeaways:
+#
+# (1) Apply -1 to the appended index at [1],
+#     since the input A are +1 indexes.
+#     Restore the minused indexes, at [2].
 
 N = int(input())
 
@@ -16,12 +15,12 @@ for i in range(N):
 for i in range(N):
     K, *A = list(map(int, input().split()))
     for a in A:
-        P_and_Gift_From[a - 1].append(i)
+        P_and_Gift_From[a - 1].append(i) # ... [1]
 
 for i in range(N):
     no = len(P_and_Gift_From[i])
     ary = sorted(P_and_Gift_From[i])
     new = []
     for a in ary:
-        new.append(a +1)
+        new.append(a + 1) # ... [2]
     print(no, *new)
