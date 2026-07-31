@@ -9,9 +9,9 @@
 S = input()
 N = int(input())
 N, M = map(int, input().split())
-Strings = [ input() for _ in range(N) ]
-Chars_Ary = list(input())
 X_Y = [ list(map(int, input().split())) for _ in range(N) ]
+strings = [ input() for _ in range(N) ]
+chars  = list(input())
 
 # Notes of emacs key-bindings
 #
