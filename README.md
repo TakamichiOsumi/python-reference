@@ -40,6 +40,10 @@ Tested on only Mac OS X.
 - BFS(breadth-first search)
   - [Double Dots][1]
   - [Tour][2]
+  - [Sensors][3]
+    This is the BFS for matrix. Set a center point and search all of the 8 surrounding cells
+    from the center.
 
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
+[3]:E/Sensors.py
