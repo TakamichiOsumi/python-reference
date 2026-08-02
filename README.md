@@ -35,9 +35,11 @@ the direct execution of reference.py disables them.
 
 Tested on only Mac OS X.
 
-### Algorithms links
+## Algorithms links
 
 - BFS(breadth-first search)
   - [Double Dots][1]
+  - [Tour][2]
 
 [1]:re/D/Double_Dots.py
+[2]:C/Tour.py
