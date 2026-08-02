@@ -44,6 +44,12 @@ Tested on only Mac OS X.
     This is the BFS for matrix. Set a center point and search all of the 8 surrounding cells
     from the center.
 
+- DP(dynamic programming)
+  - [Frog 1][4]
+  - [Prediction and Restriction][5]
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
+[4]:A/Frog_1.py
+[5]:re/D/Prediction_and_Restriction.py
