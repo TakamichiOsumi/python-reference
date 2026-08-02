@@ -34,3 +34,10 @@ the direct execution of reference.py disables them.
 ## Notes
 
 Tested on only Mac OS X.
+
+### Algorithms links
+
+- BFS(breadth-first search)
+  - [Double Dots][1]
+
+[1]:re/D/Double_Dots.py
