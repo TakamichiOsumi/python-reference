@@ -48,8 +48,12 @@ Tested on only Mac OS X.
   - [Frog 1][4]
   - [Prediction and Restriction][5]
 
+- Bit Brute Force
+  - [H and V][6]
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
 [4]:A/Frog_1.py
 [5]:re/D/Prediction_and_Restriction.py
+[6]:C/H_and_V.py
