@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from sortedcontainers import SortedList, SortedDict, SortedSet
+from sortedcontainers import SortedList
 
 N, M = map(int, input().split())
 A = SortedList(map(int, input().split()))
@@ -14,5 +14,3 @@ while cp_M > 0:
     cp_M -= 1
 
 print(sum(A))
-
-
