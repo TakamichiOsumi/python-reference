@@ -41,8 +41,7 @@ Tested on only Mac OS X.
   - [Double Dots][1]
   - [Tour][2]
   - [Sensors][3]
-    This is the BFS for matrix. Set a center point and search all of the 8 surrounding cells
-    from the center.
+    Similar to BFS and applied to matrix. Set a center point and search all of the eight surrounding cells from the center.
 
 - DP(dynamic programming)
   - [Frog 1][4]
@@ -52,6 +51,10 @@ Tested on only Mac OS X.
   - [H and V][6]
   - [ORXOR][7]
 
+- Trig Functions
+  - [Opposite][8]
+    Describe some notes regarding conversion between degrees and radians. Also, about point rotation.
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
@@ -59,3 +62,4 @@ Tested on only Mac OS X.
 [5]:re/D/Prediction_and_Restriction.py
 [6]:C/H_and_V.py
 [7]:re/C/ORXOR.py
+[8]:re/D/Opposite.py
