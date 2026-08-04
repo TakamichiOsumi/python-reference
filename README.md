@@ -50,6 +50,7 @@ Tested on only Mac OS X.
 
 - Bit Brute Force
   - [H and V][6]
+  - [ORXOR][7]
 
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
@@ -57,3 +58,4 @@ Tested on only Mac OS X.
 [4]:A/Frog_1.py
 [5]:re/D/Prediction_and_Restriction.py
 [6]:C/H_and_V.py
+[7]:re/C/ORXOR.py
