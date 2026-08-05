@@ -6,6 +6,23 @@
 # import numpy
 # import re
 
+debug_mode = False
+def p(var_list):
+    global debug_mode
+    if not type(var_list) is str:
+        return
+    if debug_mode:
+        split = var_list.split(",")
+        split = [ var.replace(" ", "") for var in split if var.replace(" ", "") in globals() ]
+        if len(split) == 0:
+            return
+        print('DEBUG: ', end="")
+        for i, var in enumerate(split):
+            if i == len(split) - 1:
+                print('{} => {}'.format(var, eval(var)))
+            else:
+                print('{} => {}, '.format(var, eval(var)), end="")
+
 S = input()
 N = int(input())
 N, M = map(int, input().split())
