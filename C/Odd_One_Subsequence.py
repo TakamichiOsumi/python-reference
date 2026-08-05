@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# Use simple implementation of logic.
+# In this problem, using Counter() to count up each number frequency
+# was effective to eliminate bugs.
+
 from collections import Counter
 
 from math import factorial
