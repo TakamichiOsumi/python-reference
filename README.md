@@ -55,6 +55,9 @@ Tested on only Mac OS X.
   - [Opposite][8]
     Describe some notes regarding conversion between degrees and radians. Also, about point rotation.
 
+- Binary Search
+  - [Buy an Integer][9]
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
@@ -63,3 +66,4 @@ Tested on only Mac OS X.
 [6]:C/H_and_V.py
 [7]:re/C/ORXOR.py
 [8]:re/D/Opposite.py
+[9]:re/C/Buy_an_Integer.py
