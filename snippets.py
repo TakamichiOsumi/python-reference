@@ -16,6 +16,8 @@ S = input()
 N = int(input())
 N, M = map(int, input().split())
 X_Y = [ list(map(int, input().split())) for _ in range(N) ]
+# Ascending order by each 0th element.
+sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
 strings = [ input() for _ in range(N) ]
 chars  = list(input())
 
