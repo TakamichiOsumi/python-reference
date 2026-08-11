@@ -58,6 +58,9 @@ Tested on only Mac OS X.
 - Binary Search
   - [Buy an Integer][9]
 
+- XOR (Exclusive or)
+  - [Inc, Dec, Xor][10]
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
@@ -67,3 +70,4 @@ Tested on only Mac OS X.
 [7]:re/C/ORXOR.py
 [8]:re/D/Opposite.py
 [9]:re/C/Buy_an_Integer.py
+[10]:re/C/Inc,_Dec,_Xor.py
