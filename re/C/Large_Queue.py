@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-# from sortedcontainers import SortedList, SortedDict, SortedSet
-from collections import deque, Counter
-# import itertools
-# import numpy
-# import re
+# Key Takeaways:
+#
+# (1) Save the pair of [c, x] as it is. Never create and append [x] * c,
+#     when the problem description defines the maximum size of c is quite big.
 
-debug = False # True
+from collections import deque, Counter
+
+debug = False
 def p(*var):
     global debug
     if debug:
