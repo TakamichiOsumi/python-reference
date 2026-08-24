@@ -42,6 +42,7 @@ Tested on only Mac OS X.
   - [Tour][2]
   - [Sensors][3]
     Similar to BFS and applied to matrix. Set a center point and search all of the eight surrounding cells from the center.
+  - [Grid Repainting][11]
 
 - DP(dynamic programming)
   - [Frog 1][4]
@@ -71,3 +72,4 @@ Tested on only Mac OS X.
 [8]:re/D/Opposite.py
 [9]:re/C/Buy_an_Integer.py
 [10]:re/C/Inc,_Dec,_Xor.py
+[11]:D/Grid_Repainting.py

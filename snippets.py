@@ -5,7 +5,8 @@
 # from sortedcontainers import SortedSet # add(), remove(), etc
 # from collections import deque # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
 # from collections Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
-# import itertools
+# import itertools # itertools.permutations(range(A, B)), itertools.combinations(range(A, B), C),
+#                  # itertools.product(range(A, B), range(C, D)), etc
 # import numpy
 # import re # for m in re.finditer(r"(aa+)|(bb+)|(cc+)", s):
 
