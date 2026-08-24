@@ -25,8 +25,6 @@ sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
 strings = [ input() for _ in range(N) ]
 chars  = list(input())
 
-# Handle queries
-#
 # Q = int(input())
 # for i in range(Q):
 #     s = input()
@@ -48,7 +46,6 @@ chars  = list(input())
 
 # Notes of yasnippets
 #
-# debug_mode<TAB> : Set up 'p' function for debug.
 # ij<TAB> : expand double-loop with i and j variable.
 # ifelse<TAB> : expand 'if' and 'else' pair.
 # ifelif<TAB> : expand 'if','elif' and 'else' set.
