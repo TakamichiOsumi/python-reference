@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 
-# from sortedcontainers import SortedList, SortedDict, SortedSet
-# from collections import deque, Counter
+# from sortedcontainers import SortedDict # keys(), values(), items(), bisect_left(), bisect_right(), etc
+# from sortedcontainers import SortedList # add(), bisect_left(), bisect_right(), count(), extend(), index(), insert(index, value), etc
+# from sortedcontainers import SortedSet # add(), remove(), etc
+# from collections import deque # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
+# from collections Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
 # import itertools
 # import numpy
-# import re
+# import re # for m in re.finditer(r"(aa+)|(bb+)|(cc+)", s):
 
-debug_mode = False
+debug = False
 def p(*var):
-    global debug_mode
-    if debug_mode:
+    global debug
+    if debug:
         print("DEBUG:", *var)
 
 S = input()
@@ -20,6 +23,18 @@ X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
 strings = [ input() for _ in range(N) ]
 chars  = list(input())
+
+# Handle queries
+#
+# Q = int(input())
+# for i in range(Q):
+#     s = input()
+#     if s[0] == '1':
+#         # query = 1
+#         q, x, y = map(int, s.split())
+#     else:
+#         # like for query = 2.
+# 	q, k = map(int, s.split())
 
 # Notes of emacs key-bindings
 #
