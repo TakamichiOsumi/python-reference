@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 
-# from sortedcontainers import SortedDict # keys(), values(), items(), bisect_left(), bisect_right(), etc
-# from sortedcontainers import SortedList # add(), bisect_left(), bisect_right(), count(), extend(), index(), insert(index, value), etc
-# from sortedcontainers import SortedSet # add(), remove(), etc
-# from collections import deque # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
-from collections import Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
-# import itertools # itertools.permutations(range(A, B)), itertools.combinations(range(A, B), C),
-#                  # itertools.product(range(A, B), range(C, D)), etc
-# import numpy
-# import re # for m in re.finditer(r"(aa+)|(bb+)|(cc+)", s):
+from collections import Counter
 
 debug = False
 def p(*var):
