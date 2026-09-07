@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) The entire area is not large enough to scan all of maximum costs
+#     from every cell.
+# (2) Do not forget the initial flag set for the starting cell,
+#     as described in [1].
+
 from collections import deque
 
 H, W = map(int, input().split())
@@ -9,7 +16,7 @@ def BFS(area, max_h, max_w, start_h, start_w):
 
     d = deque([(start_h, start_w, 0)])
     visited = [ [False] * max_w for _ in range(max_h) ]
-    visited[start_h][start_w] = True
+    visited[start_h][start_w] = True # ... [1]
 
     cur_max_c = 0
     while len(d) > 0:

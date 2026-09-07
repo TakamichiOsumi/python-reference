@@ -80,3 +80,6 @@ Tested on only Mac OS X.
 
 - Memory Limitation
   - [Remove and Append](./C/Remove_and_Append.py)
+
+- Time Limitation
+  - [Maze Master](./re/D/Maze_Master.py)
