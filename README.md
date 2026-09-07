@@ -43,6 +43,7 @@ Tested on only Mac OS X.
   - [Sensors][3]
     Similar to BFS and applied to matrix. Set a center point and search all of the eight surrounding cells from the center.
   - [Grid Repainting][11]
+  - [Maze Master][12]
 
 - DP(dynamic programming)
   - [Frog 1][4]
@@ -73,3 +74,9 @@ Tested on only Mac OS X.
 [9]:re/C/Buy_an_Integer.py
 [10]:re/C/Inc,_Dec,_Xor.py
 [11]:D/Grid_Repainting.py
+[12]:re/D/Maze_Master.py
+
+## Minor insights for competitve programming
+
+- Memory Limitation
+  - [Remove and Append](./C/Remove_and_Append.py)
