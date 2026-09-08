@@ -472,6 +472,49 @@ for m in re.finditer(r"(foo)|(bar)", S):
     print("Index=", m.start(0), "&", m.end(0),
           ", Sub string : ", S[ m.start(0) : m.end(0) ])
 
+
+# ------------------------------------
+# BFS function.
+#
+# Return the maximum cost from the start cell.
+# ------------------------------------
+def BFS(area, max_h, max_w, start_h, start_w, four_directions):
+
+    cur_max_c = 0
+
+    d = deque([(start_h, start_w, 0)])
+
+    visited = [ [False] * max_w for _ in range(max_h) ]
+    visited[start_h][start_w] = True
+
+    movable_cell = '.'
+
+    if four_direction:
+        moves = [          [-1, 0],
+                  [0, -1],          [0, 1],
+                           [ 1, 0]]
+    else:
+        moves = [[-1, -1], [-1, 0], [-1, 1],
+                 [ 0, -1],          [ 0, 1],
+                 [ 1, -1], [ 1, 0], [ 1, 1]]
+
+    while len(d) > 0:
+        cur_h, cur_w, cur_c = d.popleft()
+        if cur_max_c < cur_c:
+            cur_max_c = cur_c
+
+        for m in moves:
+            moved_w = cur_w + m[1]
+            moved_h = cur_h + m[0]
+            if (0 <= moved_w <= max_w - 1) and (0 <= moved_h <= max_h - 1) \
+               and (area[moved_h][moved_w] == movable_cell) \
+               and (visited[moved_h][moved_w] is False):
+                visited[moved_h][moved_w] = True
+                d.append((moved_h, moved_w, cur_c + 1))
+
+    return cur_max_c
+
+
 # ------------------------------------
 # * DO NOT ADD ANY NOTES AFTER THE SHELL START *
 #
