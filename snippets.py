@@ -19,11 +19,13 @@ def p(*var):
 S = input()
 N = int(input())
 N, M = map(int, input().split())
+A = list(map(int, input().split()))
 X_Y = [ list(map(int, input().split())) for _ in range(N) ]
+
 # Ascending order by each 0th element.
-sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
-strings = [ input() for _ in range(N) ]
-chars  = list(input())
+# sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
+# strings = [ input() for _ in range(N) ]
+# chars  = list(input())
 
 # Q = int(input())
 # for i in range(Q):
@@ -32,8 +34,8 @@ chars  = list(input())
 #         # query = 1
 #         q, x, y = map(int, s.split())
 #     else:
-#         # like for query = 2.
-# 	q, k = map(int, s.split())
+#         # other cases like for query = 2.
+#         q, k = map(int, s.split())
 
 # Notes of emacs key-bindings
 #
