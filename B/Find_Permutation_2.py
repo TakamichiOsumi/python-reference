@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# (1) For any problem that requires to print one example of answer,
+#     just simplify the easiest answer case and print it, like below.
+
 N = int(input())
 A = list(map(int, input().split()))
 
-used = [False] * (N + 1)
+unused = []
+
 for i in range(1, N + 1):
     cnt = A.count(i)
-    if cnt >= 1:
-        used[i] = True
+    if cnt == 0:
+        unused.append(i)
+    else:
         if cnt >= 2:
             print("No")
             exit()
-
-unused = []
-for i in range(1, N + 1):
-    if not used[i]:
-        unused.append(i)
-
-used.pop(0)
 
 print("Yes")
 res = []
