@@ -69,6 +69,10 @@ Tested on only Mac OS X.
 - XOR (Exclusive or)
   - [Inc, Dec, Xor][10]
 
+- Run-length encoding
+  - [String Compression][15]
+  See the reference for the Run-length function.
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
@@ -83,6 +87,7 @@ Tested on only Mac OS X.
 [12]:re/D/Maze_Master.py
 [13]:E/Min_Max_Swap.py
 [14]:D/Friends.py
+[15]:B/String_Compression.py
 
 ## Minor insights for competitve programming
 
