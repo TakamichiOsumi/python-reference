@@ -231,6 +231,22 @@ print("product=", list(itertools.product(range(1, 4), range(1, 4))))
 #  (1, 2, 3), (1, 3, 3), (2, 2, 2), (2, 2, 3), (2, 3, 3), (3, 3, 3)]
 # product= [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
 
+
+def runLengthEncode(string, get_freqs):
+    chars = list(string)
+    pairs = [ (k, list(g)) for k, g in itertools.groupby(chars) ]
+    char_freqs = [ (t[0], len(t[1])) for t in pairs ]
+    if get_freqs:
+        return char_freqs
+    ans = ""
+    for t in char_freqs:
+        c, freq = t
+        ans += (c + str(freq))
+    return ans
+
+print("runLengthEncode=", runLengthEncode("foo", True)) # runLengthEncode= [('f', 1), ('o', 2)]
+print("runLengthEncode=", runLengthEncode("foo", False)) # runLengthEncode= f1o2
+
 # ------------------------------------
 # Bit Brute Force
 # ------------------------------------
