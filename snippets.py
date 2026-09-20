@@ -10,6 +10,9 @@
 # import numpy
 # import re # for m in re.finditer(r"(aa+)|(bb+)|(cc+)", s):
 
+# import sys
+# sys.setrecursionlimit(10 ** 6) # for recursion.
+
 debug = False
 def p(*var):
     global debug
