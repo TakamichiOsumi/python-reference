@@ -60,6 +60,9 @@ Tested on only Mac OS X.
 - Binary Search
   - [Buy an Integer][9]
 
+- Segment Tree
+  - [Min-Max Swap][13]
+
 - XOR (Exclusive or)
   - [Inc, Dec, Xor][10]
 
@@ -75,6 +78,7 @@ Tested on only Mac OS X.
 [10]:re/C/Inc,_Dec,_Xor.py
 [11]:D/Grid_Repainting.py
 [12]:re/D/Maze_Master.py
+[13]:E/Min_Max_Swap.py
 
 ## Minor insights for competitve programming
 
