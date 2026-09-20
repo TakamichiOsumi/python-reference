@@ -72,6 +72,8 @@ Tested on only Mac OS X.
 - Run-length encoding
   - [String Compression][15]
   See the reference for the Run-length function.
+  - [DoubleCamelCase Sort][16]
+  This is a problem similar to Run-length algorithm.
 
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
@@ -88,6 +90,7 @@ Tested on only Mac OS X.
 [13]:E/Min_Max_Swap.py
 [14]:D/Friends.py
 [15]:B/String_Compression.py
+[16]:F/Double_Camel_Case.py
 
 ## Minor insights for competitve programming
 
