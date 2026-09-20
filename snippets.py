@@ -10,6 +10,9 @@
 # import numpy
 # import re # for m in re.finditer(r"(aa+)|(bb+)|(cc+)", s):
 
+# from atcoder.segtree import SegTree # seg = SegTree(max, -(10**9), [2, 3, 5, 1, 6]) # set(), prod(), etc
+# from atcoder.dsu # uf = DSU(int value); # groups(), leader(), merge(), same(), size()
+
 # import sys
 # sys.setrecursionlimit(10 ** 6) # for recursion.
 
