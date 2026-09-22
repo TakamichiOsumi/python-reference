@@ -62,6 +62,7 @@ Tested on only Mac OS X.
 
 - Segment Tree
   - [Min-Max Swap][13]
+  - [Range Xor Query][17]
 
 - Disjoint Set Union (Union-Find)
   - [Friends][14]
@@ -91,6 +92,7 @@ Tested on only Mac OS X.
 [14]:D/Friends.py
 [15]:B/String_Compression.py
 [16]:F/Double_Camel_Case.py
+[17]:re/F/Range_Xor_Query.py
 
 ## Minor insights for competitve programming
 
