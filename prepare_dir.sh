@@ -11,15 +11,9 @@ else
     mkdir $1
     cd $1
     # Prepare some files in advance.
-    cp ./../snippets.py A.py
-    touch A_{1..3}.txt
-    cp ./../snippets.py B.py
-    touch B_{1..3}.txt
-    cp ./../snippets.py C.py
-    touch C_{1..3}.txt
-    cp ./../snippets.py D.py
-    touch D_{1..3}.txt
-    cp ./../snippets.py E.py
-    touch E_{1..3}.txt
+    for c in `echo "A B C D E F G"`
+    do
+	cp ./../snippets.py ./$c.py
+    done
     echo "Created a new directory"
 fi
