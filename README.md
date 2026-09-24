@@ -76,6 +76,9 @@ Tested on only Mac OS X.
   - [DoubleCamelCase Sort][16]
   This is a problem similar to Run-length algorithm.
 
+- Cumulative Sum
+  - [90/10][18]
+
 [1]:re/D/Double_Dots.py
 [2]:C/Tour.py
 [3]:E/Sensors.py
@@ -93,6 +96,7 @@ Tested on only Mac OS X.
 [15]:B/String_Compression.py
 [16]:F/Double_Camel_Case.py
 [17]:re/F/Range_Xor_Query.py
+[18]:90/10.py
 
 ## Minor insights for competitve programming
 
