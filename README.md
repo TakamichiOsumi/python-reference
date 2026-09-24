@@ -96,7 +96,7 @@ Tested on only Mac OS X.
 [15]:B/String_Compression.py
 [16]:F/Double_Camel_Case.py
 [17]:re/F/Range_Xor_Query.py
-[18]:90/10.py
+[18]:90/010.py
 
 ## Minor insights for competitve programming
 
