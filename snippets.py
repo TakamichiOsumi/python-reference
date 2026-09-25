@@ -6,7 +6,8 @@
 # from collections import deque # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
 # from collections Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
 # import itertools # itertools.permutations(range(A, B)), itertools.combinations(range(A, B), C),
-#                  # itertools.product(range(A, B), range(C, D)), itertools.groupby(list(S)), etc
+#                  # itertools.product(range(A, B), range(C, D)), itertools.groupby(list(S)),
+#                  # itertools.accumulate(A), etc
 # import numpy
 # import re # for m in re.finditer(r"(aa+)|(bb+)|(cc+)", s):
 
@@ -33,12 +34,14 @@ X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 # strings = [ input() for _ in range(N) ]
 # chars  = list(input())
 
-# Q = int(input())
-# for i in range(Q):
-#     s = input()
-#     if s[0] == '1':
-#         # query = 1
-#         q, x, y = map(int, s.split())
-#     else:
-#         # other cases like for query = 2.
-#         q, k = map(int, s.split())
+"""
+Q = int(input())
+for i in range(Q):
+    s = input()
+    if s[0] == '1':
+        # query = 1
+        q, x, y = map(int, s.split())
+    else:
+        # other cases like for query = 2.
+        q, k = map(int, s.split())
+"""
