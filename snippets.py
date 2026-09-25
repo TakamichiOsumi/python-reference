@@ -42,18 +42,3 @@ X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 #     else:
 #         # other cases like for query = 2.
 #         q, k = map(int, s.split())
-
-# Notes of emacs key-bindings
-#
-# C-l k : kill-region
-# C-l w : kill word from the cursor position
-# C-l a : kill until the beginning of line
-# C-l e : kill until the end of line
-# C-l u : kill until the end of the buffer
-# C-l C-m : comment-or-uncomment-region
-
-# Notes of yasnippets
-#
-# ij<TAB> : expand double-loop with i and j variable.
-# ifelse<TAB> : expand 'if' and 'else' pair.
-# ifelif<TAB> : expand 'if','elif' and 'else' set.
