@@ -77,7 +77,8 @@ Tested on only Mac OS X.
   This is a problem similar to Run-length algorithm.
 
 - Cumulative Sum
-  - [90/10][18]
+  - [10/90][18]
+  - [38/90][20]
 
 - Cycle Graph
   - [Cycle Graph][19]
@@ -101,6 +102,7 @@ Tested on only Mac OS X.
 [17]:re/F/Range_Xor_Query.py
 [18]:90/010.py
 [19]:re/C/Cycle_Graph.py
+[20]:90/038.py
 
 ## Minor insights for competitve programming
 
