@@ -17,7 +17,7 @@
 # import sys
 # sys.setrecursionlimit(10 ** 6) # for recursion.
 
-debug = False
+debug = False # debug switch
 def p(*var):
     global debug
     if debug:
