@@ -4,7 +4,7 @@
 # from sortedcontainers import SortedList # add(), bisect_left(), bisect_right(), count(), extend(), index(), insert(index, value), etc
 # from sortedcontainers import SortedSet # add(), remove(), etc
 # from collections import deque # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
-# from collections Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
+# from collections import Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
 # import itertools # itertools.permutations(range(A, B)), itertools.combinations(range(A, B), C),
 #                  # itertools.product(range(A, B), range(C, D)), itertools.groupby(list(S)),
 #                  # itertools.accumulate(A), etc
@@ -17,7 +17,7 @@
 # import sys
 # sys.setrecursionlimit(10 ** 6) # for recursion.
 
-debug = False # debug switch
+debug = False # switch
 def p(*var):
     global debug
     if debug:
