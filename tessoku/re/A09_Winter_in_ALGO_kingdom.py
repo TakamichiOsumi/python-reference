@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 
+# Key Takeaways:
+#
+# As described in [1], the maximum H or W indexes are,
+# H - 1 and W - 1 respectively.
+#
+# The cumulative sum can be calculated as [2],
+# saving the previous line value and reuse it
+# in the next loop.
+
 debug = False # switch
 def p(*var):
     global debug
@@ -19,11 +28,11 @@ for _ in range(N):
     a, b, c, d = map(int, input().split())
     a, b, c, d = a - 1, b - 1, c - 1, d - 1
     area[a][b] += 1
-    if d + 1 < W and c + 1 < H: # ... [3]
+    if d + 1 < W and c + 1 < H: # ... [1]
         area[c + 1][d + 1] += 1
-    if d + 1 < W: # ... [3]
+    if d + 1 < W: # ... [1]
         area[a][d + 1] -= 1
-    if c + 1 < H: # ... [3]
+    if c + 1 < H: # ... [1]
         area[c + 1][b] -= 1
 
 # Horizontal cumulative sum.
