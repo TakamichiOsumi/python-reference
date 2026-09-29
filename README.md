@@ -79,6 +79,9 @@ Tested on only Mac OS X.
 - Cumulative Sum
   - [10/90][18]
   - [38/90][20]
+  - [A07 - Event Attendance][21]
+  - [A08 - Two Dimensional Sum][22]
+    A08 can be improved more.
 
 - Cycle Graph
   - [Cycle Graph][19]
@@ -103,6 +106,8 @@ Tested on only Mac OS X.
 [18]:90/010.py
 [19]:re/C/Cycle_Graph.py
 [20]:90/038.py
+[21]:tessoku/A07_Event_Attendance.py
+[22]:tessoku/A08_Two_Dimensional_Sum.py
 
 ## Minor insights for competitve programming
 
