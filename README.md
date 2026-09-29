@@ -81,7 +81,8 @@ Tested on only Mac OS X.
   - [38/90][20]
   - [A07 - Event Attendance][21]
   - [A08 - Two Dimensional Sum][22]
-    A08 can be improved more.
+    A08 can be improved more, from the speed aspect. Refer to the A09 below.
+  - [A09 - Winter in ALGO kingdom][23]
 
 - Cycle Graph
   - [Cycle Graph][19]
@@ -108,6 +109,7 @@ Tested on only Mac OS X.
 [20]:90/038.py
 [21]:tessoku/A07_Event_Attendance.py
 [22]:tessoku/A08_Two_Dimensional_Sum.py
+[23]:tessoku/re/A09_Winter_in_ALGO_kingdom.py
 
 ## Minor insights for competitve programming
 
