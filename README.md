@@ -20,7 +20,7 @@ $ mkdir -p ~/.emacs.d/snippets/python-mode
 $ cp Env/snippets/python-mode/* ~/.emacs.d/snippets/python-mode
 ```
 
-## Run a local interactive reference
+## During a competition, run an offline reference
 
 Execute 'python3' to start the console. Load the reference file.
 This enables key shortcuts such as Cntrl-a and Cntrl-d, while
@@ -28,6 +28,7 @@ the direct execution of reference.py disables them.
 
 ```
 >>> import reference
+...
 >>> help(string)
 ```
 
