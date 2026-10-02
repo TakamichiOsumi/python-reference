@@ -60,7 +60,8 @@ Tested on only Mac OS X.
 - Binary Search
   - [Buy an Integer][9]
   - [A12 - Printer][24]
-  - [A13 - Close Pairs][25]
+  - [A13 - Close Pairs][25] A13's performance can be made faster to O(N) by another logic called 'Two Pointer Technique'.
+  - [A14 - Four Boxes[26]
 
 - Segment Tree
   - [Min-Max Swap][13]
@@ -114,6 +115,7 @@ Tested on only Mac OS X.
 [23]:tessoku/re/A09_Winter_in_ALGO_kingdom.py
 [24]:tessoku/re/A12_Printer.py
 [25]:tessoku/A13_Close_Pairs.py
+[26]:tessoku/A14_Four_Boxes.py
 
 ## Minor insights for competitve programming
 
