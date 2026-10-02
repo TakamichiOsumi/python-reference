@@ -10,9 +10,6 @@ def p(*var):
 
 N, K = map(int, input().split())
 A = SortedList(map(int, input().split()))
-p(A)
-
-leftmost_idx = A.bisect_right(K)
 
 total = 0
 for i in range(N):
