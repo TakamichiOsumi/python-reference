@@ -34,4 +34,4 @@ for i in range(N):
 if possible:
     print("Yes")
 else:
-    print("No")    
+    print("No")
