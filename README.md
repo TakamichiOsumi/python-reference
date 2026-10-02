@@ -60,8 +60,6 @@ Tested on only Mac OS X.
 - Binary Search
   - [Buy an Integer][9]
   - [A12 - Printer][24]
-
-- Two-Pointer Technique
   - [A13 - Close Pairs][25]
 
 - Segment Tree
