@@ -61,7 +61,7 @@ Tested on only Mac OS X.
   - [Buy an Integer][9]
   - [A12 - Printer][24]
   - [A13 - Close Pairs][25] A13's performance can be made faster to O(N) by another logic called 'Two Pointer Technique'.
-  - [A14 - Four Boxes[26]
+  - [A14 - Four Boxes][26]
 
 - Segment Tree
   - [Min-Max Swap][13]
