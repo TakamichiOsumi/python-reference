@@ -35,7 +35,7 @@ reference of the offline library manuals.
 
 Tested on only Mac OS X.
 
-## Algorithms links
+## Algorithms
 
 - BFS(breadth-first search)
   - [Double Dots][1]
@@ -60,6 +60,9 @@ Tested on only Mac OS X.
 - Binary Search
   - [Buy an Integer][9]
   - [A12 - Printer][24]
+
+- Two-Pointer Technique
+  - [A13 - Close Pairs][25]
 
 - Segment Tree
   - [Min-Max Swap][13]
@@ -112,6 +115,7 @@ Tested on only Mac OS X.
 [22]:tessoku/A08_Two_Dimensional_Sum.py
 [23]:tessoku/re/A09_Winter_in_ALGO_kingdom.py
 [24]:tessoku/re/A12_Printer.py
+[25]:tessoku/A13_Close_Pairs.py
 
 ## Minor insights for competitve programming
 
