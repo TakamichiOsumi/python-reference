@@ -60,6 +60,7 @@ Tested on only Mac OS X.
 
 - Binary Search
   - [Buy an Integer][9]
+  - [A12 - Printer][24]
 
 - Segment Tree
   - [Min-Max Swap][13]
@@ -111,6 +112,7 @@ Tested on only Mac OS X.
 [21]:tessoku/A07_Event_Attendance.py
 [22]:tessoku/A08_Two_Dimensional_Sum.py
 [23]:tessoku/re/A09_Winter_in_ALGO_kingdom.py
+[24]:tessoku/re/A12_Printer.py
 
 ## Minor insights for competitve programming
 
