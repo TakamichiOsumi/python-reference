@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+from atcoder.segtree import SegTree
+from atcoder.dsu import DSU
+from sortedcontainers import SortedDict, SortedList, SortedSet
+from collections import deque, Counter
+import itertools
+import numpy
+import re
+import sys
+import string
+
 # ------------------------------------
 # Array assignment
 # ------------------------------------
@@ -106,7 +116,7 @@ S = S.replace('a', '', count = 1)
 # ------------------------------------
 # SortedList
 # ------------------------------------
-from sortedcontainers import SortedList, SortedSet
+# requires 'from sortedcontainers import SortedList, SortedSet'
 sorted_list = SortedList([1, 2, 3, 4, 5])
 sorted_list.add(6)
 sorted_list.add(7)
@@ -218,7 +228,7 @@ print("prime factors of 2020=", prime_factorization(2020))
 # ------------------------------------
 # itertools
 # ------------------------------------
-import itertools
+# requires 'import itertools'
 print("permutations=", list(itertools.permutations(range(1, 4))))
 print("combinations=", list(itertools.combinations(range(1, 5), 3)))
 print("combinations_with_replacement=",
@@ -299,9 +309,7 @@ def bit_brute_force_patterns(N):
 # ------------------------------------
 # Characters
 # ------------------------------------
-import string
-
-# help(string)
+# help(string) # requires 'import string'
 # ...
 #     ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 #     ascii_lowercase = 'abcdefghijklmnopqrstuvwxyz'
@@ -420,9 +428,7 @@ print("")
 # ------------------------------------
 # deque
 # ------------------------------------
-from collections import deque
-
-d = deque([1, 2, 3])
+d = deque([1, 2, 3]) # requires 'from collections import deque'
 d.append(4) # append an element at the end
 d.appendleft(0) # append an element at the front
 print(d)
@@ -438,18 +444,14 @@ print(d.popleft()) # pop from the front
 # Count each elements and generate
 # dictionary.
 # ------------------------------------
-from collections import Counter
-
-counts = Counter(list("aaabbcdddde"))
+counts = Counter(list("aaabbcdddde")) # requires 'from collections import Counter'
 print("char counts =", counts)
 # char counts = Counter({'d': 4, 'a': 3, 'b': 2, 'c': 1, 'e': 1})
 
 # ------------------------------------
 # numpy
 # ------------------------------------
-import numpy
-
-npmat = numpy.array(range(24)).reshape(4, 6)
+npmat = numpy.array(range(24)).reshape(4, 6) # requires 'import numpy'
 print(npmat)
 # array([[ 0,  1,  2,  3,  4,  5],
 #        [ 6,  7,  8,  9, 10, 11],
@@ -482,9 +484,8 @@ print("columns=", columns)
 # index of the last character captured
 # by the regular expression.
 # ------------------------------------
-import re
 S = "This is a test. foo and bar."
-for m in re.finditer(r"(foo)|(bar)", S):
+for m in re.finditer(r"(foo)|(bar)", S): # requires 'import re'
     print("Index=", m.start(0), "&", m.end(0),
           ", Sub string : ", S[ m.start(0) : m.end(0) ])
 
@@ -539,7 +540,7 @@ def BFS(area, max_h, max_w, start_h, start_w, four_directions):
 # ------------------------------------
 import code
 
-print("===<Variable List>===")
+print("===<Variable Examples>===")
 print("string : 'S'")
 print("array : 'ary', 'new_ary'")
 print("matrix : 'mat'")
