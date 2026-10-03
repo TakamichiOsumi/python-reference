@@ -87,6 +87,7 @@ Tested on only Mac OS X.
   - [A08 - Two Dimensional Sum][22]
     A08 can be improved more, from the speed aspect. Refer to the A09 below.
   - [A09 - Winter in ALGO kingdom][23]
+    This approach can be applied to [Range Set Insertion Query][28] too.
 
 - Cycle Graph
   - [Cycle Graph][19]
@@ -118,6 +119,7 @@ Tested on only Mac OS X.
 [25]:tessoku/A13_Close_Pairs.py
 [26]:tessoku/A14_Four_Boxes.py
 [27]:tessoku/A16_Dungeon_1.py
+[28]:D/Range_Set_Insertion_Query.py
 
 ## Minor insights for competitve programming
 
