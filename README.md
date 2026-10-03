@@ -48,6 +48,7 @@ Tested on only Mac OS X.
 - DP(dynamic programming)
   - [Frog 1][4]
   - [Prediction and Restriction][5]
+  - [A16 - Dungeon 1][27]
 
 - Bit Brute Force
   - [H and V][6]
@@ -116,6 +117,7 @@ Tested on only Mac OS X.
 [24]:tessoku/re/A12_Printer.py
 [25]:tessoku/A13_Close_Pairs.py
 [26]:tessoku/A14_Four_Boxes.py
+[27]:tessoku/A16_Dungeon_1.py
 
 ## Minor insights for competitve programming
 
