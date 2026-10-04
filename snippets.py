@@ -30,12 +30,12 @@ N, M = map(int, input().split())
 A = list(map(int, input().split()))
 X_Y = [ list(map(int, input().split())) for _ in range(N) ]
 
-# Ascending order by each 0th element.
-# sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
-# strings = [ input() for _ in range(N) ]
-# chars  = list(input())
-
 """
+# Ascending order by each 0th element.
+sorted_X_Y = sorted(X_Y, reverse = False, key = lambda x : x[0])
+strings = [ input() for _ in range(N) ]
+chars  = list(input())
+
 Q = int(input())
 for i in range(Q):
     s = input()
