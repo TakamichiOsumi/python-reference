@@ -3,6 +3,7 @@
 # from sortedcontainers import SortedDict # keys(), values(), items(), bisect_left(), bisect_right(), etc
 # from sortedcontainers import SortedList # add(), bisect_left(), bisect_right(), count(), extend(), index(), insert(index, value), etc
 # from sortedcontainers import SortedSet # add(), remove(), etc
+# from collections import defaultdict # dd = defaultdict(list)
 # from collections import deque # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
 # from collections import Counter # c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
 # import itertools # itertools.permutations(range(A, B)), itertools.combinations(range(A, B), C),
