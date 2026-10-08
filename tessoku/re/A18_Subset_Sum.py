@@ -48,6 +48,10 @@ for card_idx in range(N + 1):
             #
             # This is like offsetting each other and leaving (creating)
             # the current 'card_no'.
+            #
+            # Make it easier to remember the logic for myself,
+            # by expressing it as "walking behind while looking
+            # to the front-right".
             if (val - card_no >= 0) and dp[card_idx - 1][val - card_no]:
                 dp[card_idx][val] = True
     p("made matrix:")

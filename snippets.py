@@ -11,7 +11,7 @@ from collections import defaultdict
 from collections import deque
 # append(), appendleft(), extend(), extendleft(), index(), pop(), popleft(), etc
 from collections import Counter
-# c = Counter('abcdeabc') # print(''.join(sorted(c.elements()))) => 'aabbccde'
+# c = Counter('abcdeabc') # ''.join(sorted(c.elements()))) == 'aabbccde'
 import itertools
 # itertools.permutations(range(A, B)), itertools.combinations(range(A, B), C)
 # itertools.product(range(A, B), range(C, D)), itertools.groupby(list(S))
