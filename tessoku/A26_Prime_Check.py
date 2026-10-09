@@ -1,19 +1,7 @@
 #!/usr/bin/env python3
 
-from sortedcontainers import SortedDict
-from sortedcontainers import SortedList
 from sortedcontainers import SortedSet
 from collections import defaultdict
-from collections import deque
-from collections import Counter
-import itertools
-import numpy
-import re
-
-from atcoder.segtree import SegTree
-from atcoder.dsu import DSU
-
-import sys
 
 debug = True # switch
 def p(*var):
@@ -42,7 +30,6 @@ def is_prime(val):
 Q = int(input())
 
 primes = SortedSet([])
-dd = defaultdict(None)
 
 for i in range(Q):
     x = int(input())
