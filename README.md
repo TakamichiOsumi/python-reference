@@ -49,6 +49,8 @@ Tested on only Mac OS X.
   - [Frog 1][4]
   - [Prediction and Restriction][5]
   - [A16 - Dungeon 1][27]
+  - [A18 - Subset Sum][29]
+  - [A19 - Knapsack 1][30]
 
 - Bit Brute Force
   - [H and V][6]
@@ -120,6 +122,8 @@ Tested on only Mac OS X.
 [26]:tessoku/A14_Four_Boxes.py
 [27]:tessoku/A16_Dungeon_1.py
 [28]:D/Range_Set_Insertion_Query.py
+[29]:tessoku/re/A18_Subset_Sum.py
+[30]:tessoku/A19_Knapsack_1.py
 
 ## Minor insights for competitve programming
 
