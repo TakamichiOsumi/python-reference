@@ -32,7 +32,12 @@ debug = True # switch
 def p(*var):
     global debug
     if debug:
-        print("DEBUG:", *var)
+        if len(var) == 1 and type(var[0]) == type([]):
+            print("DEBUG : --argument array--")
+            for i in range(len(var[0])):
+                print(f"\t{i}:{var[0][i]}")
+        else:
+            print("DEBUG:", *var)
 
 N, M = map(int, input().split())
 A = list(map(int, input().split()))
