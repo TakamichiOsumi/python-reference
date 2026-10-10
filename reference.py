@@ -131,6 +131,8 @@ print(sorted_list)
 #
 # If 'include_pair' is True, then add divisor and
 # its counterpair when N % divisor == 0.
+#
+# Note that for *GCD*, use math.gcd(A, B).
 # --------------------------------------------------
 def get_divisors(N, include_edges = True, include_pair = True):
     if include_edges:
